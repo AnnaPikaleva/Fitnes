@@ -1,8 +1,9 @@
 .video {
-  position: relative;
-  width: 100%;
+  // display: none;
+  position: absolute;
+  width: 30.5%;
   height: 0;
-  padding-bottom: 56.25%;
+  padding-bottom: 20.25%;
   background-color: $color-default-black;
 
   &:hover .video__button {
@@ -12,6 +13,11 @@
   &--enabled {
     cursor: pointer;
   }
+}
+
+.video__link {
+  background-color: rgba(20, 54, 122, 0.5);
+  z-index: 2;
 }
 
 .video__media {

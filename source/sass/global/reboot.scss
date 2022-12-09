@@ -4,38 +4,29 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-
-html {
-  font-style: normal;
-  font-weight: 400;
-  font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  // оптимизация выравнивания шрифта относительно центра строки
-  text-rendering: optimizeLegibility;
-  // если по прежнему есть проблемы с выравниванием
-  // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
-}
-
-body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  min-width: 320px;
 
+  color: $color-font-dark;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
   background-color: $color-default-white;
 }
 
 a {
-  color: $color-default-black;
+  color: $color-font-dark;
   text-decoration: none;
 }
 
