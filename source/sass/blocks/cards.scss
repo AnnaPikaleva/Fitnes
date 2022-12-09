@@ -1,0 +1,112 @@
+.cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+
+  @media (max-width: $vp-1199) {
+    flex-direction: column;
+  }
+}
+
+.cards__item {
+  width: 26.3%;
+  min-width: 300px;
+  min-height: 448px;
+  background-color: $color-default-white;
+  padding: 68px 35px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 40px;
+  border: 7px solid transparent;
+
+  &:hover {
+    border: 7px solid;
+    border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+    border-image-slice: 1;
+  }
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 35px;
+    // width: 100%;
+    min-width: 290px;
+    min-height: 384px;
+    padding: 55px 35px;
+  }
+}
+
+.cards__item h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  margin: 0;
+  margin-bottom: 22px;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 20px;
+  }
+}
+
+.cards__item span {
+  color: $color-dark-blue;
+}
+
+.cards__wrap-price-shadow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 29px;
+  margin-bottom: 59px;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 50px;
+  }
+}
+
+.cards__wrap-price-shadow p {
+  color: $color-bright-blue;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  margin: 0;
+  margin-top: -105px;
+  margin-left: 15px;
+  z-index: 1;
+
+  &:first-of-type {
+    color: $color-price-shadow;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 150px;
+    opacity: 0.48;
+    position: static;
+    margin: 0;
+  }
+}
+
+.cards__wrap-price-shadow span {
+  font-family: $ff-rouble;
+  color: $color-font-dark;
+  padding-left: 14px;
+}
+
+.cards__button {
+  color: $color-font-dark;
+  border: 2px solid $color-font-dark;
+  padding: 27px 44px;
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    border: none;
+    color: $color-default-white;
+  }
+}

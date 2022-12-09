@@ -1,18 +1,109 @@
 .block-gym__container {
   padding: 120px 103px 235px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   gap: 85px;
+  position: relative;
+
+  @media (max-width: $vp-1199) {
+    padding: 100px 45px 183px;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 0;
+    position: static;
+  }
 }
 
 .block-gym__info {
+  padding-left: 60px;
 
+  @media (max-width: $vp-1199) {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 15px;
+    text-align: left;
+  }
+}
+
+.block-gym__info h2 {
+  font-family: $ff-alumni;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 6px;
+  }
 }
 
 .block-gym__info p {
-  max-width: 380px;
+  &:first-of-type {
+    margin-bottom: 55px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+  }
+
+  max-width: 355px;
+  font-weight: 300;
+  margin: 0;
+
+  @media (max-width: $vp-1199) {
+    // text-align: center;
+    max-width: 579px;
+
+    &:first-of-type {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: none;
+  }
 }
 
+.block-gym__img {
+  width: 100%;
+  height: auto;
+}
 
+.block-gym__link {
+  display: block;
+  position: absolute;
+  width: 28.5%;
+  height: 0;
+  padding-bottom: 18.25%;
+  top: 55%;
+  right: 32%;
+
+  @media (max-width: $vp-1199) {
+    top: auto;
+    top: 75%;
+    right: 35%;
+  }
+
+  @media (max-width: $vp-767) {
+    position: static;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+
+.block-gym__info .block-gym__subtext {
+  @media (max-width: $vp-1199) {
+    display: none;
+  }
+}

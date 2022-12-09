@@ -46,23 +46,25 @@
         <div class="block-gym__container container">
           <div class="block-gym__info">
             <h2>Тренажерный зал</h2>
-            <span>Просторный зал площадью 900 кв/м</span>
+            <p>Просторный зал площадью 900 кв/м</p>
             <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
-          </div>
-          <div class="block-gym__video video video--enabled">
-            <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-              <picture>
-                <source type="image/webp" srcset="./img/video.webp, ./img/video@2x.webp 2x">
-                <img class="video__media" src="./img/video.png" srcset="./img/video@2x.png 2x" alt="Тренажерный зал SUPERGYM">
-              </picture>
-            </a>
-            <button class="video__button" aria-label="Запустить видео"></button>
+              <span class="block-gym__subtext">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span></p>
           </div>
           <picture>
             <source type="image/webp" srcset="./img/gym.webp, ./img/gym@2x.webp 2x ">
-            <img src="./img/gym.jpg" srcset="./img/gym@2x.jpeg 2x" width="600" height="401" alt="Фото мужчины в футболке с буквой С.">
+            <img class="block-gym__img" src="./img/gym.jpg" srcset="./img/gym@2x.jpeg 2x" width="600" height="401" alt="Фото мужчины в футболке с буквой С.">
           </picture>
+          <a class="block-gym__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+            <div class="block-gym__video video video--enabled">
+              <!-- <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw"> -->
+                  <picture>
+                    <source type="image/webp" srcset="./img/video.webp, ./img/video@2x.webp 2x">
+                    <img class="video__media" src="./img/video.png" srcset="./img/video@2x.png 2x" alt="Тренажерный зал SUPERGYM">
+                  </picture>
+              <!-- </a> -->
+              <button class="video__button" aria-label="Запустить видео"></button>
+            </div>
+          </a>
         </div>
       </section>
       <section class="tickets">
@@ -81,19 +83,28 @@
                     <li class="cards__item">
                       <h3>С тренером</h3>
                       <span>12 занятий</span>
-                      <p>5000</p>
+                      <div class="cards__wrap-price-shadow">
+                        <p>5000</p>
+                        <p>5000<span>i</span></p>
+                      </div>
                       <a class="cards__button button" href="#">Купить абонемент</a>
                     </li>
                     <li class="cards__item">
                       <h3>Дневной</h3>
                       <span>с 8:00 до 17:00 </span>
-                      <p>1700</p>
+                      <div class="cards__wrap-price-shadow">
+                        <p>1700</p>
+                        <p>1700<span>i</span></p>
+                      </div>
                       <a class="cards__button button" href="#">Купить абонемент</a>
                     </li>
                     <li class="cards__item">
                       <h3>Полный день</h3>
                       <span>с 8:00 до 22:00 </span>
-                      <p>2700</p>
+                      <div class="cards__wrap-price-shadow">
+                        <p>2700</p>
+                        <p>2700<span>i</span></p>
+                      </div>
                       <a class="cards__button button" href="#">Купить абонемент</a>
                     </li>
                   </ul>
@@ -103,19 +114,28 @@
                     <li class="cards__item">
                       <h3>С тренером</h3>
                       <span>72 занятия</span>
-                      <p>27000</p>
+                      <div class="cards__wrap-price-shadow">
+                        <p>27000</p>
+                        <p>27000<span>i</span></p>
+                      </div>
                       <a class="cards__button button" href="#">Купить абонемент</a>
                     </li>
                     <li class="cards__item">
                       <h3>Дневной</h3>
                       <span>с 8:00 до 17:00 </span>
-                      <p>9000</p>
+                      <div class="cards__wrap-price-shadow">
+                        <p>9000</p>
+                        <p>9000<span>i</span></p>
+                      </div>
                       <a class="cards__button button" href="#">Купить абонемент</a>
                     </li>
                     <li class="cards__item">
                       <h3>Полный день</h3>
                       <span>с 8:00 до 22:00 </span>
-                      <p>14500</p>
+                      <div class="cards__wrap-price-shadow">
+                        <p>14500</p>
+                        <p>14500<span>i</span></p>
+                      </div>
                       <a class="cards__button button" href="#">Купить абонемент</a>
                     </li>
                   </ul>
@@ -125,19 +145,28 @@
                     <li class="cards__item">
                       <h3>С тренером</h3>
                       <span>144 занятия</span>
-                      <p>48000</p>
+                      <div class="cards__wrap-price-shadow">
+                        <p>48000</p>
+                        <p>48000<span>i</span></p>
+                      </div>
                       <a class="cards__button button" href="#">Купить абонемент</a>
                     </li>
                     <li class="cards__item">
                       <h3>Дневной</h3>
                       <span>с 8:00 до 17:00 </span>
-                      <p>17400</p>
+                      <div class="cards__wrap-price-shadow">
+                        <p>17400</p>
+                        <p>17400<span>i</span></p>
+                      </div>
                       <a class="cards__button button" href="#">Купить абонемент</a>
                     </li>
                     <li class="cards__item">
                       <h3>Полный день</h3>
                       <span>с 8:00 до 22:00 </span>
-                      <p>27500</p>
+                      <div class="cards__wrap-price-shadow">
+                        <p>27500</p>
+                        <p>27500<span>i</span></p>
+                      </div>
                       <a class="cards__button button" href="#">Купить абонемент</a>
                     </li>
                   </ul>

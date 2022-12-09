@@ -1,0 +1,15 @@
+.tabs__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  margin-bottom: 39px;
+}
+
+.tabs__item {
+  margin-right: 46px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

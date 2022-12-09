@@ -1,23 +1,43 @@
 .video {
   // display: none;
-  position: absolute;
-  width: 30.5%;
+  position: relative;
+  width: 100%;
   height: 0;
-  padding-bottom: 20.25%;
+  padding-bottom: 56.25%;
   background-color: $color-default-black;
 
-  &:hover .video__button {
-    background-image: none;
+  &::before {
+    content: "";
+    width: 100%;
+    background-color: rgba(20, 54, 122, 0.5);
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
+
+  // &:hover .video__button {
+  //   background-image: none;
+  // }
 
   &--enabled {
     cursor: pointer;
   }
-}
 
-.video__link {
-  background-color: rgba(20, 54, 122, 0.5);
-  z-index: 2;
+  // @media (max-width: $vp-1199) {
+  //   top: auto;
+  //   bottom: 16%;
+  //   right: 35%;
+  // }
+
+  @media (max-width: $vp-767) {
+    // position: relative;
+    // top: auto;
+    // right: auto;
+    // bottom: auto;
+    // position: static;
+  }
 }
 
 .video__media {
@@ -36,26 +56,31 @@
   width: 72px;
   height: 72px;
   transform: translate(-50%, -50%);
-  background-image: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+  // background-image: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
   border-radius: 50%;
   border: none;
   padding: 0;
   outline: none;
   display: none;
   cursor: pointer;
+  z-index: 2;
+  background-image: url("../img/svg/button-video.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
 
-  &::before {
-    content: "";
-    background-image: url("../img/svg/arrow-video.svg");
-    background-repeat: no-repeat;
-    width: 17px;
-    height: 17px;
-    z-index: 1;
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    // transform: translate(-50%, -50%);
-  }
+  // &::before {
+  //   content: "";
+  //   background-image: url("../img/svg/arrow-video.svg");
+  //   background-repeat: no-repeat;
+  //   width: 17px;
+  //   height: 17px;
+  //   z-index: 1;
+  //   position: absolute;
+  //   top: 40%;
+  //   left: 45%;
+  //   // transform: translate(-50%, -50%);
+  // }
 
   &:focus {
     background-image: none;

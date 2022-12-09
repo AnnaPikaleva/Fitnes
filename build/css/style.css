@@ -386,6 +386,14 @@ template {
 
 @font-face {
   font-style: normal;
+  font-weight: 400;
+  font-family: "Rouble";
+  font-display: swap;
+  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 600;
   font-family: "Alumni Sans";
   font-display: swap;
@@ -633,6 +641,7 @@ button,
   text-align: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 .modal {
@@ -748,24 +757,26 @@ button,
 }
 
 .video {
-  position: absolute;
-  width: 30.5%;
+  position: relative;
+  width: 100%;
   height: 0;
-  padding-bottom: 20.25%;
+  padding-bottom: 56.25%;
   background-color: #000000;
 }
 
-.video:hover .video__button {
-  background-image: none;
+.video::before {
+  content: "";
+  width: 100%;
+  background-color: rgba(20, 54, 122, 0.5);
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .video--enabled {
   cursor: pointer;
-}
-
-.video__link {
-  background-color: rgba(20, 54, 122, 0.5);
-  z-index: 2;
 }
 
 .video__media {
@@ -786,26 +797,17 @@ button,
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-image: -o-linear-gradient(45.11deg, #003D85 25.38%, #B80027 74.89%);
-  background-image: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
   border-radius: 50%;
   border: none;
   padding: 0;
   outline: none;
   display: none;
   cursor: pointer;
-}
-
-.video__button::before {
-  content: "";
-  background-image: url("../img/svg/arrow-video.svg");
+  z-index: 2;
+  background-image: url("../img/svg/button-video.svg");
   background-repeat: no-repeat;
-  width: 17px;
-  height: 17px;
-  z-index: 1;
-  position: absolute;
-  top: 40%;
-  left: 45%;
+  background-size: contain;
+  background-color: transparent;
 }
 
 .video__button:focus {
@@ -877,8 +879,6 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -886,10 +886,49 @@ svg {
   -ms-flex-align: center;
   align-items: center;
   gap: 85px;
+  position: relative;
+}
+
+.block-gym__info {
+  padding-left: 60px;
+}
+
+.block-gym__info h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .block-gym__info p {
-  max-width: 380px;
+  max-width: 355px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.block-gym__info p:first-of-type {
+  margin-bottom: 55px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.block-gym__img {
+  width: 100%;
+  height: auto;
+}
+
+.block-gym__link {
+  display: block;
+  position: absolute;
+  width: 28.5%;
+  height: 0;
+  padding-bottom: 18.25%;
+  top: 55%;
+  right: 32%;
 }
 
 .intro {
@@ -983,6 +1022,159 @@ svg {
   justify-self: end;
 }
 
+.tickets {
+  background-color: #f8f9fc;
+}
+
+.tickets__container {
+  padding: 120px 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tickets__container h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.tabs__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 39px;
+}
+
+.tabs__item {
+  margin-right: 46px;
+}
+
+.tabs__item:last-child {
+  margin-right: 0;
+}
+
+.cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cards__item {
+  width: 26.3%;
+  min-width: 300px;
+  min-height: 448px;
+  background-color: #ffffff;
+  padding: 68px 35px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 40px;
+  border: 7px solid transparent;
+}
+
+.cards__item:hover {
+  border: 7px solid;
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  border-image-slice: 1;
+}
+
+.cards__item h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.cards__item span {
+  color: #495a7d;
+}
+
+.cards__wrap-price-shadow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 29px;
+  margin-bottom: 59px;
+}
+
+.cards__wrap-price-shadow p {
+  color: #103aae;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  margin: 0;
+  margin-top: -105px;
+  margin-left: 15px;
+  z-index: 1;
+}
+
+.cards__wrap-price-shadow p:first-of-type {
+  color: #e8e8e8;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150px;
+  opacity: 0.48;
+  position: static;
+  margin: 0;
+}
+
+.cards__wrap-price-shadow span {
+  font-family: "rouble", "Arial", sans-serif;
+  color: #102654;
+  padding-left: 14px;
+}
+
+.cards__button {
+  color: #102654;
+  border: 2px solid #102654;
+  padding: 27px 44px;
+}
+
+.cards__button:hover,
+.cards__button:focus {
+  background-image: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
+  background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  border: none;
+  color: #ffffff;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1025,10 +1217,6 @@ svg {
 */
 
 @media (max-width: 1199px) {
-  .container {
-    padding: 0 24px;
-  }
-
   .header__nav {
     padding: 40px 45px 0;
   }
@@ -1043,6 +1231,47 @@ svg {
     font-size: 24px;
     line-height: 29px;
     font-weight: 700;
+  }
+
+  .block-gym__container {
+    padding: 100px 45px 183px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 50px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .block-gym__info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .block-gym__info h2 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 6px;
+  }
+
+  .block-gym__info p {
+    max-width: 579px;
+  }
+
+  .block-gym__info p:first-of-type {
+    margin-bottom: 50px;
+  }
+
+  .block-gym__link {
+    top: auto;
+    top: 75%;
+    right: 35%;
+  }
+
+  .block-gym__info .block-gym__subtext {
+    display: none;
   }
 
   .intro__container {
@@ -1079,13 +1308,27 @@ svg {
     width: 324px;
     height: 390px;
   }
+
+  .tickets__container {
+    padding: 100px 163px;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .cards__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .cards__item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 0 16px;
-  }
-
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -1114,6 +1357,26 @@ svg {
     line-height: 24px;
   }
 
+  .block-gym__container {
+    padding: 70px 0;
+    position: static;
+  }
+
+  .block-gym__info {
+    padding: 0 15px;
+    text-align: left;
+  }
+
+  .block-gym__info p {
+    max-width: none;
+  }
+
+  .block-gym__link {
+    position: static;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+
   .intro__container {
     padding: 115px 15px 80px;
   }
@@ -1136,5 +1399,27 @@ svg {
 
   .intro__img {
     display: none;
+  }
+
+  .tickets__container {
+    padding: 70px 15px;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .cards__item {
+    margin-bottom: 35px;
+    min-width: 290px;
+    min-height: 384px;
+    padding: 55px 35px;
+  }
+
+  .cards__item h3 {
+    margin-bottom: 20px;
+  }
+
+  .cards__wrap-price-shadow {
+    margin-bottom: 50px;
   }
 }
