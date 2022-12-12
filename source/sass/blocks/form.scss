@@ -1,0 +1,25 @@
+.form {
+  background-color: $color-font-dark;
+}
+
+.form__container {
+  padding: 56px 170px 70px 103px;
+}
+
+.form__container h2 {
+  color: $color-default-white;
+  font-weight: 800;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  line-height: 84px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__apply {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}

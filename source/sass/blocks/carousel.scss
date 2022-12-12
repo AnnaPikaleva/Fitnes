@@ -1,0 +1,55 @@
+.carousel {
+  width: 58%;
+  display: flex;
+}
+
+.carousel__track {
+  margin: 0;
+  list-style: none;
+  padding: 0 40px;
+
+}
+
+.carousel__item {
+  color: $color-default-white;
+  background-color: $color-card;
+  padding: 60px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 28px;
+}
+
+.carousel__img {
+  grid-row: 1/3;
+}
+
+.carousel__item span {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.carousel__item p {
+  margin: 0;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.carousel__button-arrow {
+  width: 16px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.carousel__prev {
+  transform: rotate(-180deg);
+}

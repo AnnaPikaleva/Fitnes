@@ -1,0 +1,49 @@
+.contacts__container {
+  padding: 56px 120px 70px;
+}
+
+.contacts__container h2 {
+  // color: $color-default-white;
+  font-weight: 600;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  line-height: 84px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 120px;
+  row-gap: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 35%;
+    height: 1px;
+    background-color: $color-line-blue;
+    position: absolute;
+    bottom: 50%;
+    left: 33%;
+    transform: rotate(90deg);
+  }
+}
+
+.contacts__item h3 {
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contacts__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+}

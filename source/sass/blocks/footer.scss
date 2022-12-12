@@ -1,0 +1,37 @@
+.footer {
+  background-color: $color-black;
+  color: $color-default-white;
+}
+
+.footer__container {
+  padding: 44px 103px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo p {
+  color: $color-default-white;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+}
+
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  max-width: 440px;
+}
+
+.footer__nav-item a {
+  color: $color-default-white;
+  margin-right: 40px;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

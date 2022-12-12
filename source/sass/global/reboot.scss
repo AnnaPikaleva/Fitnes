@@ -60,6 +60,9 @@ textarea {
 
   &::placeholder {
     opacity: 1;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
   }
 
   &:invalid {

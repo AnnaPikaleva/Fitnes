@@ -1,0 +1,34 @@
+.field input {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #74819c;
+  width: 100%;
+  max-width: 190px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid #ED0233;
+    // border-image-source: linear-gradient(97.05deg, #ED0233 95.31%, #003EB7 17.6%);
+    // border-image-slice: 1;
+  }
+}
+
+.field button {
+  grid-column: 1/3;
+  padding: 21px 45px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  border: 3px solid $color-default-white;
+  color: $color-default-white;
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    color: $color-default-white;
+  }
+}
