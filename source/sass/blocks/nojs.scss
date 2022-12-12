@@ -1,0 +1,15 @@
+.nojs.tabs__block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+
+  @media (max-width: $vp-1199) {
+    &--active {
+      flex-direction: column;
+    }
+  }
+}

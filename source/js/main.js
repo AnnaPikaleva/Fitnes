@@ -20,6 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.querySelectorAll('.nojs').forEach((item) => item.classList.remove('nojs'));
+
 // Move to block
 
 const anchors = document.querySelectorAll('a[href]');
@@ -37,20 +39,41 @@ for (let anchor of anchors) {
 
 // Tabs
 const triggers = document.querySelectorAll('.tabs__item');
+const tabsItems = document.querySelectorAll('.tabs__block');
 
-triggers.forEach((item) => {
+triggers.forEach(onTabClick);
+
+function onTabClick(item) {
   item.addEventListener('click', function (event) {
     event.preventDefault();
-    const id = event.target.getAttribute('href').replace('#', '');
+    let currentTrigger = item;
+    let tabId = currentTrigger.getAttribute('data-tab');
+    let currentTab = document.querySelector(tabId);
 
-    triggers.forEach((child) => child.classList.remove('tabs__item--active'));
-    document.querySelectorAll('.tabs__block--active').forEach((child) => child.classList.remove('tabs__block--active'));
-    item.classList.add('tabs__item--avtive');
-    document.getElementById(id).classList.add('tabs__block--active');
+    if (!currentTrigger.classList.contains('tabs__item--active')) {
+      triggers.forEach((child) => child.classList.remove('tabs__item--active'));
+      tabsItems.forEach((child) => child.classList.remove('tabs__block--active'));
+
+      currentTrigger.classList.add('tabs__item--active');
+      currentTab.classList.add('tabs__block--active');
+    }
   });
-});
+}
 
 document.querySelector('.tabs__item').click();
+
+// Slider
+// const items = document.querySelectorAll('.slider__item');
+// let slider = [];
+// const rightButton = document.querySelector('.slider__next');
+// const leftButton = document.querySelector('.slider__prev');
+
+// for (let i = 0; i < items.length; i++) {
+//   slider[i] = items[i];
+//   console.log(slider[i]);
+//   items[i].remove();
+// }
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

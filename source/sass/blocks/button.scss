@@ -19,6 +19,13 @@
     color: $color-default-white;
   }
 
+  @media (max-width: $vp-1199) {
+    padding: 16px 24px;
+    font-size: 10px;
+    line-height: 12px;
+    border-width: 2px;
+  }
+
   // transition: opacity $trans-default;
 
   // &--red {

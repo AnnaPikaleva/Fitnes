@@ -1,3 +1,7 @@
 .index-columns {
   display: flex;
+
+  @media (max-width: $vp-1199) {
+    flex-direction: column;
+  }
 }
