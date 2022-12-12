@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   margin-bottom: 39px;
 }
 
@@ -12,4 +11,26 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.tabs__item--active {
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.tabs__block {
+  display: none;
+
+  @media (max-width: $vp-1199) {
+    flex-direction: column;
+  }
+}
+
+.tabs__block--active {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }

@@ -859,13 +859,6 @@ button,
   margin-right: 0;
 }
 
-.social__link {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #ffffff;
-  border-radius: 50%;
-}
-
 svg {
   fill: #030a1a;
 }
@@ -1112,7 +1105,15 @@ svg {
   margin-right: 0;
 }
 
-.cards__list {
+.tabs__item--active {
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.tabs__block {
+  display: none;
+}
+
+.tabs__block--active {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2094,7 +2095,7 @@ svg {
     align-items: stretch;
   }
 
-  .cards__list {
+  .tabs__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

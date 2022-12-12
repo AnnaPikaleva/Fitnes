@@ -32,7 +32,7 @@
             <h1>ФИТНЕС ЦЕНТР</h1>
             <p>Тренажёрный зал Групповые занятия Кардио-зона </p>
             <span>ОМСК</span>
-            <a class="intro__button button">Купить абонемент</a>
+            <a class="intro__button button" href="#tickets">Купить абонемент</a>
           </div>
           <picture>
             <source type="image/webp" srcset="./img/photo-main-block.webp, ./img/photo-main-block@2x.webp 2x">
@@ -68,110 +68,102 @@
         </div>
       </section>
       <section class="tickets">
-        <div class="tickets__container container">
+        <div class="tickets__container container" id="tickets">
           <h2>Абонементы</h2>
           <div class="tickets__content">
             <div class="tickets__tabs tabs">
-              <nav class="tabs__items">
-                <a class="tabs__item" href="#tab-1">1 месяц</a>
-                <a class="tabs__item" href="#tab-2">6 месяцев</a>
-                <a class="tabs__item" href="#tab-3">12 месяцев</a>
-              </nav>
-              <div class="tabs__body">
-                <div class="tabs__block cards" id="tab-1">
-                  <ul class="cards__list">
-                    <li class="cards__item">
-                      <h3>С тренером</h3>
-                      <span>12 занятий</span>
-                      <div class="cards__wrap-price-shadow">
-                        <p>5000</p>
-                        <p>5000<span>i</span></p>
-                      </div>
-                      <a class="cards__button button" href="#">Купить абонемент</a>
-                    </li>
-                    <li class="cards__item">
-                      <h3>Дневной</h3>
-                      <span>с 8:00 до 17:00 </span>
-                      <div class="cards__wrap-price-shadow">
-                        <p>1700</p>
-                        <p>1700<span>i</span></p>
-                      </div>
-                      <a class="cards__button button" href="#">Купить абонемент</a>
-                    </li>
-                    <li class="cards__item">
-                      <h3>Полный день</h3>
-                      <span>с 8:00 до 22:00 </span>
-                      <div class="cards__wrap-price-shadow">
-                        <p>2700</p>
-                        <p>2700<span>i</span></p>
-                      </div>
-                      <a class="cards__button button" href="#">Купить абонемент</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="tabs__block cards" id="tab-2">
-                  <ul class="cards__list">
-                    <li class="cards__item">
-                      <h3>С тренером</h3>
-                      <span>72 занятия</span>
-                      <div class="cards__wrap-price-shadow">
-                        <p>27000</p>
-                        <p>27000<span>i</span></p>
-                      </div>
-                      <a class="cards__button button" href="#">Купить абонемент</a>
-                    </li>
-                    <li class="cards__item">
-                      <h3>Дневной</h3>
-                      <span>с 8:00 до 17:00 </span>
-                      <div class="cards__wrap-price-shadow">
-                        <p>9000</p>
-                        <p>9000<span>i</span></p>
-                      </div>
-                      <a class="cards__button button" href="#">Купить абонемент</a>
-                    </li>
-                    <li class="cards__item">
-                      <h3>Полный день</h3>
-                      <span>с 8:00 до 22:00 </span>
-                      <div class="cards__wrap-price-shadow">
-                        <p>14500</p>
-                        <p>14500<span>i</span></p>
-                      </div>
-                      <a class="cards__button button" href="#">Купить абонемент</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="tabs__block cards" id="tab-3">
-                  <ul class="cards__list">
-                    <li class="cards__item">
-                      <h3>С тренером</h3>
-                      <span>144 занятия</span>
-                      <div class="cards__wrap-price-shadow">
-                        <p>48000</p>
-                        <p>48000<span>i</span></p>
-                      </div>
-                      <a class="cards__button button" href="#">Купить абонемент</a>
-                    </li>
-                    <li class="cards__item">
-                      <h3>Дневной</h3>
-                      <span>с 8:00 до 17:00 </span>
-                      <div class="cards__wrap-price-shadow">
-                        <p>17400</p>
-                        <p>17400<span>i</span></p>
-                      </div>
-                      <a class="cards__button button" href="#">Купить абонемент</a>
-                    </li>
-                    <li class="cards__item">
-                      <h3>Полный день</h3>
-                      <span>с 8:00 до 22:00 </span>
-                      <div class="cards__wrap-price-shadow">
-                        <p>27500</p>
-                        <p>27500<span>i</span></p>
-                      </div>
-                      <a class="cards__button button" href="#">Купить абонемент</a>
-                    </li>
-                  </ul>
-                </div>
+              <div class="tabs__items">
+                <a class="tabs__item tabs__item--active" href="#tab-1">1 месяц</a>
+                <a class="tabs__item tabs__item--active" href="#tab-2">6 месяцев</a>
+                <a class="tabs__item tabs__item--active" href="#tab-3">12 месяцев</a>
               </div>
+                <ul class="tabs__block tabs__block--active cards" id="tab-1">
+                  <li class="cards__item">
+                    <h3>С тренером</h3>
+                    <span>12 занятий</span>
+                    <div class="cards__wrap-price-shadow">
+                      <p>5000</p>
+                      <p>5000<span>i</span></p>
+                    </div>
+                    <a class="cards__button button" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="cards__item">
+                    <h3>Дневной</h3>
+                    <span>с 8:00 до 17:00 </span>
+                    <div class="cards__wrap-price-shadow">
+                      <p>1700</p>
+                      <p>1700<span>i</span></p>
+                    </div>
+                    <a class="cards__button button" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="cards__item">
+                    <h3>Полный день</h3>
+                    <span>с 8:00 до 22:00 </span>
+                    <div class="cards__wrap-price-shadow">
+                      <p>2700</p>
+                      <p>2700<span>i</span></p>
+                    </div>
+                    <a class="cards__button button" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+                <ul class="tabs__block cards tabs__block--active" id="tab-2">
+                  <li class="cards__item">
+                    <h3>С тренером</h3>
+                    <span>72 занятия</span>
+                    <div class="cards__wrap-price-shadow">
+                      <p>27000</p>
+                      <p>27000<span>i</span></p>
+                    </div>
+                    <a class="cards__button button" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="cards__item">
+                    <h3>Дневной</h3>
+                    <span>с 8:00 до 17:00 </span>
+                    <div class="cards__wrap-price-shadow">
+                      <p>9000</p>
+                      <p>9000<span>i</span></p>
+                    </div>
+                    <a class="cards__button button" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="cards__item">
+                    <h3>Полный день</h3>
+                    <span>с 8:00 до 22:00 </span>
+                    <div class="cards__wrap-price-shadow">
+                      <p>14500</p>
+                      <p>14500<span>i</span></p>
+                    </div>
+                    <a class="cards__button button" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+                <ul class="tabs__block cards tabs__block--active" id="tab-3">
+                  <li class="cards__item">
+                    <h3>С тренером</h3>
+                    <span>144 занятия</span>
+                    <div class="cards__wrap-price-shadow">
+                      <p>48000</p>
+                      <p>48000<span>i</span></p>
+                    </div>
+                    <a class="cards__button button" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="cards__item">
+                    <h3>Дневной</h3>
+                    <span>с 8:00 до 17:00 </span>
+                    <div class="cards__wrap-price-shadow">
+                      <p>17400</p>
+                      <p>17400<span>i</span></p>
+                    </div>
+                    <a class="cards__button button" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="cards__item">
+                    <h3>Полный день</h3>
+                    <span>с 8:00 до 22:00 </span>
+                    <div class="cards__wrap-price-shadow">
+                      <p>27500</p>
+                      <p>27500<span>i</span></p>
+                    </div>
+                    <a class="cards__button button" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
             </div>
           </div>
         </div>
@@ -494,7 +486,7 @@
         <ul class="social">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
-              <svg width="13" height="8" viewBox="0 0 13 8" fill="currentColor">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
                 <use xlink:href="./img/sprite.svg#vk"></use>
               </svg>
               <span class="visually-hidden">Мы Вконтакте.</span>
@@ -502,7 +494,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--ok" href="#">
-              <svg width="10" height="17" viewBox="0 0 10 17" fill="currentColor">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
                 <use xlink:href="./img/sprite.svg#ok"></use>
               </svg>
               <span class="visually-hidden">Мы в Одноклассниках.</span>
@@ -510,7 +502,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--reddit" href="#">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="currentColor">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
                 <use xlink:href="./img/sprite.svg#reddit"></use>
               </svg>
               <span class="visually-hidden">Мы в Реддит.</span>
