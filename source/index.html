@@ -226,10 +226,26 @@
       <section class="coaches">
         <div class="coaches__container container">
           <h2>Тренеры</h2>
-          <div class="coaches__list slider">
-            <button class="slider__button-arrow slider__prev" type="button" aria-label="Предыдущее фото"></button>
-            <ul class="slider__line">
-              <li class="slider__item coach-info">
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="coach-info__img" src="./img/trainer-1.jpg" srcset="./img/trainer-1@2x.png 2x" width="260" height="294" alt="Фото тренера Анна Павлова.">
+              </div>
+              <div class="swiper-slide">
+                <img class="coach-info__img" src="./img/trainer-2.jpg" srcset="./img/trainer-2@2x.png 2x" width="260" height="294" alt="Фото тренера Алексей Лавров.">
+              </div>
+              <div class="swiper-slide">
+                <img class="coach-info__img" src="./img/trainer-3.jpg" srcset="./img/trainer-3@2x.png 2x" width="260" height="294" alt="Фото тренера Александр Пашков.">
+              </div>
+            </div>
+            <button class="swiper-btn-prev slider__button-arrow slider__prev" type="button" aria-label="Предыдущее фото"></button>
+            <button class="swiper-btn-next slider__button-arrow slider__next" type="button" aria-label="Следующее фото"></button>
+          </div>
+
+          <!-- <div class="coaches__list slider swiper">
+            <ul class="slider__line swiper-wrapper">
+              <li class="slider__item coach-info swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-1.webp, ./img/trainer-1@2x.webp 2x">
                   <img class="coach-info__img" src="./img/trainer-1.jpg" srcset="./img/trainer-1@2x.png 2x" width="260" height="294" alt="Фото тренера Анна Павлова.">
@@ -245,7 +261,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info">
+              <li class="slider__item coach-info swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-2.webp, ./img/trainer-2@2x.webp 2x">
                   <img class="coach-info__img" src="./img/trainer-2.jpg" srcset="./img/trainer-2@2x.png 2x" width="260" height="294" alt="Фото тренера Алексей Лавров.">
@@ -261,7 +277,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info">
+              <li class="slider__item coach-info swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-3.webp, ./img/trainer-3@2x.webp 2x">
                   <img class="coach-info__img" src="./img/trainer-3.jpg" srcset="./img/trainer-3@2x.png 2x" width="260" height="294" alt="Фото тренера Александр Пашков.">
@@ -277,7 +293,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info">
+              <li class="slider__item coach-info swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-4.webp, ./img/trainer-4@2x.webp 2x">
                   <img class="coach-info__img" src="./img/trainer-4.jpg" srcset="./img/trainer-4@2x.png 2x" width="260" height="294" alt="Фото тренера Мария Кетова.">
@@ -293,7 +309,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info">
+              <li class="slider__item coach-info swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-2.webp, ./img/trainer-2@2x.webp 2x">
                   <img class="coach-info__img" src="./img/trainer-2.jpg" srcset="./img/trainer-2@2x.png 2x" width="260" height="294" alt="Фото тренера Алексей Лавров.">
@@ -309,7 +325,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info">
+              <li class="slider__item coach-info swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-1.webp, ./img/trainer-1@2x.webp 2x">
                   <img class="coach-info__img" src="./img/trainer-1.jpg" srcset="./img/trainer-1@2x.png 2x" width="260" height="294" alt="Фото тренера Анна Павлова.">
@@ -325,7 +341,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info">
+              <li class="slider__item coach-info swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-3.webp, ./img/trainer-3@2x.webp 2x">
                   <img class="coach-info__img" src="./img/trainer-3.jpg" srcset="./img/trainer-3@2x.png 2x" width="260" height="294" alt="Фото тренера Александр Пашков.">
@@ -341,7 +357,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info">
+              <li class="slider__item coach-info swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-4.webp, ./img/trainer-4@2x.webp 2x">
                   <img class="coach-info__img" src="./img/trainer-4.jpg" srcset="./img/trainer-4@2x.png 2x" width="260" height="294" alt="Фото тренера Мария Кетова.">
@@ -357,8 +373,10 @@
                   </ul>
                 </div>
               </li>
-            </ul>
-            <button class="slider__button-arrow slider__next" type="button" aria-label="Следующее фото"></button>
+            </ul> -->
+            <!-- <button class="swiper-button-prew slider__button-arrow slider__prev " type="button" aria-label="Предыдущее фото"></button>
+            <button class="swiper-button-next slider__button-arrow slider__next" type="button" aria-label="Следующее фото"></button> -->
+            </div>
           </div>
         </div>
       </section>

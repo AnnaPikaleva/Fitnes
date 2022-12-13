@@ -7,31 +7,35 @@
   padding: 0;
   padding: 0 40px;
   list-style: none;
-  display: flex;
+  // display: flex;
   // flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 40px;
-  position: relative;
+  // justify-content: flex-start;
+  // gap: 40px;
+  // position: relative;
 }
 
 .slider__button-arrow {
   width: 16px;
-  position: relative;
+  height: 32px;
+  // position: absolute;
+  top: 50%;
   border: none;
   background-color: transparent;
   background-image: url("../../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  background-color: red;
+  cursor: pointer;
 }
 
 .slider__prev {
   transform: rotate(-180deg);
 }
 
-.slider__item {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+// .slider__item {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }
 
