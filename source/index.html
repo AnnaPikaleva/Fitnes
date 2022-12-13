@@ -224,35 +224,18 @@
         </div>
       </section>
       <section class="coaches">
-        <div class="coaches__container container">
+        <div class="coaches__container">
           <h2>Тренеры</h2>
-
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img class="coach-info__img" src="./img/trainer-1.jpg" srcset="./img/trainer-1@2x.png 2x" width="260" height="294" alt="Фото тренера Анна Павлова.">
-              </div>
-              <div class="swiper-slide">
-                <img class="coach-info__img" src="./img/trainer-2.jpg" srcset="./img/trainer-2@2x.png 2x" width="260" height="294" alt="Фото тренера Алексей Лавров.">
-              </div>
-              <div class="swiper-slide">
-                <img class="coach-info__img" src="./img/trainer-3.jpg" srcset="./img/trainer-3@2x.png 2x" width="260" height="294" alt="Фото тренера Александр Пашков.">
-              </div>
-            </div>
-            <button class="swiper-btn-prev slider__button-arrow slider__prev" type="button" aria-label="Предыдущее фото"></button>
-            <button class="swiper-btn-next slider__button-arrow slider__next" type="button" aria-label="Следующее фото"></button>
-          </div>
-
-          <!-- <div class="coaches__list slider swiper">
+          <div class="slider swiper">
             <ul class="slider__line swiper-wrapper">
-              <li class="slider__item coach-info swiper-slide">
+              <li class="slider__item swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-1.webp, ./img/trainer-1@2x.webp 2x">
-                  <img class="coach-info__img" src="./img/trainer-1.jpg" srcset="./img/trainer-1@2x.png 2x" width="260" height="294" alt="Фото тренера Анна Павлова.">
+                  <img class="slider__img" src="./img/trainer-1.webp" srcset="./img/trainer-1@2x.webp 2x" width="260" height="294" alt="Фото тренера Анна Павлова.">
                 </picture>
                 <h3>Анна Павлова</h3>
-                <div class="coach-info__more">
-                  <h3>Анна Павлова</h3>
+                <div class="slider__subitem">
+                  <h4>Анна Павлова</h4>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level&nbsp;3 Trainer</li>
@@ -261,14 +244,14 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info swiper-slide">
+              <li class="slider__item swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-2.webp, ./img/trainer-2@2x.webp 2x">
-                  <img class="coach-info__img" src="./img/trainer-2.jpg" srcset="./img/trainer-2@2x.png 2x" width="260" height="294" alt="Фото тренера Алексей Лавров.">
+                  <img class="slider__img" src="./img/trainer-2.jpg" srcset="./img/trainer-2@2x.jpg 2x" width="260" height="294" alt="Фото тренера Алексей Лавров.">
                 </picture>
                 <h3>Алексей Лавров</h3>
-                <div class="coach-info__more">
-                  <h3>Алексей Лавров</h3>
+                <div class="slider__subitem">
+                  <h4>Алексей Лавров</h4>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level&nbsp;4 Trainer</li>
@@ -277,14 +260,14 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info swiper-slide">
+              <li class="slider__item swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-3.webp, ./img/trainer-3@2x.webp 2x">
-                  <img class="coach-info__img" src="./img/trainer-3.jpg" srcset="./img/trainer-3@2x.png 2x" width="260" height="294" alt="Фото тренера Александр Пашков.">
+                  <img class="slider__img" src="./img/trainer-3.jpg" srcset="./img/trainer-3@2x.jpg 2x" width="260" height="294" alt="Фото тренера Александр Пашков.">
                 </picture>
                 <h3>Александр Пашков</h3>
-                <div class="coach-info__more">
-                  <h3>Александр Пашков</h3>
+                <div class="slider__subitem">
+                  <h4>Александр Пашков</h4>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level&nbsp;3 Trainer</li>
@@ -293,14 +276,14 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info swiper-slide">
+              <li class="slider__item swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-4.webp, ./img/trainer-4@2x.webp 2x">
-                  <img class="coach-info__img" src="./img/trainer-4.jpg" srcset="./img/trainer-4@2x.png 2x" width="260" height="294" alt="Фото тренера Мария Кетова.">
+                  <img class="slider__img" src="./img/trainer-4.jpg" srcset="./img/trainer-4@2x.jpg 2x" width="260" height="294" alt="Фото тренера Мария Кетова.">
                 </picture>
                 <h3>Мария Кетова</h3>
-                <div class="coach-info__more">
-                  <h3>Мария Кетова</h3>
+                <div class="slider__subitem">
+                  <h4>Мария Кетова</h4>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level&nbsp;2 Trainer</li>
@@ -309,14 +292,30 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info swiper-slide">
+              <li class="slider__item swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="./img/trainer-1.webp, ./img/trainer-1@2x.webp 2x">
+                  <img class="slider__img" src="./img/trainer-1.jpg" srcset="./img/trainer-1@2x.jpg 2x" width="260" height="294" alt="Фото тренера Анна Павлова.">
+                </picture>
+                <h3>Анна Павлова</h3>
+                <div class="slider__subitem">
+                  <h4>Анна Павлова</h4>
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт — 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider__item swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-2.webp, ./img/trainer-2@2x.webp 2x">
-                  <img class="coach-info__img" src="./img/trainer-2.jpg" srcset="./img/trainer-2@2x.png 2x" width="260" height="294" alt="Фото тренера Алексей Лавров.">
+                  <img class="slider__img" src="./img/trainer-2.jpg" srcset="./img/trainer-2@2x.jpg 2x" width="260" height="294" alt="Фото тренера Алексей Лавров.">
                 </picture>
                 <h3>Алексей Лавров</h3>
-                <div class="coach-info__more">
-                  <h3>Алексей Лавров</h3>
+                <div class="slider__subitem">
+                  <h4>Алексей Лавров</h4>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level&nbsp;4 Trainer</li>
@@ -325,30 +324,14 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info swiper-slide">
-                <picture>
-                  <source type="image/webp" srcset="./img/trainer-1.webp, ./img/trainer-1@2x.webp 2x">
-                  <img class="coach-info__img" src="./img/trainer-1.jpg" srcset="./img/trainer-1@2x.png 2x" width="260" height="294" alt="Фото тренера Анна Павлова.">
-                </picture>
-                <h3>Анна Павлова</h3>
-                <div class="coach-info__more">
-                  <h3>Анна Павлова</h3>
-                  <p>CrossFit</p>
-                  <ul>
-                    <li>Certified Level&nbsp;3 Trainer</li>
-                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li>Опыт — 6&nbsp;лет</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="slider__item coach-info swiper-slide">
+              <li class="slider__item swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-3.webp, ./img/trainer-3@2x.webp 2x">
-                  <img class="coach-info__img" src="./img/trainer-3.jpg" srcset="./img/trainer-3@2x.png 2x" width="260" height="294" alt="Фото тренера Александр Пашков.">
+                  <img class="slider__img" src="./img/trainer-3.jpg" srcset="./img/trainer-3@2x.jpg 2x" width="260" height="294" alt="Фото тренера Александр Пашков.">
                 </picture>
                 <h3>Александр Пашков</h3>
-                <div class="coach-info__more">
-                  <h3>Александр Пашков</h3>
+                <div class="slider__subitem">
+                  <h4>Александр Пашков</h4>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level&nbsp;3 Trainer</li>
@@ -357,14 +340,14 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item coach-info swiper-slide">
+              <li class="slider__item swiper-slide">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-4.webp, ./img/trainer-4@2x.webp 2x">
-                  <img class="coach-info__img" src="./img/trainer-4.jpg" srcset="./img/trainer-4@2x.png 2x" width="260" height="294" alt="Фото тренера Мария Кетова.">
+                  <img class="slider__img" src="./img/trainer-4.jpg" srcset="./img/trainer-4@2x.jpg 2x" width="260" height="294" alt="Фото тренера Мария Кетова.">
                 </picture>
                 <h3>Мария Кетова</h3>
-                <div class="coach-info__more">
-                  <h3>Мария Кетова</h3>
+                <div class="slider__subitem">
+                  <h4>Мария Кетова</h4>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level&nbsp;2 Trainer</li>
@@ -373,11 +356,10 @@
                   </ul>
                 </div>
               </li>
-            </ul> -->
-            <!-- <button class="swiper-button-prew slider__button-arrow slider__prev " type="button" aria-label="Предыдущее фото"></button>
-            <button class="swiper-button-next slider__button-arrow slider__next" type="button" aria-label="Следующее фото"></button> -->
-            </div>
+            </ul>
           </div>
+          <button class="slider__button swiper-button-prev slider__prev" type="button" aria-label="Предыдущее фото"></button>
+          <button class="slider__button swiper-button-next slider__next" type="button" aria-label="Следующее фото"></button>
         </div>
       </section>
       <section class="advantages">

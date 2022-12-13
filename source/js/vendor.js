@@ -17,10 +17,12 @@ import './vendor/swiper.js';
 
 // export {sliderCoaches};
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.slider', {
   direction: 'horizontal',
   loop: true,
   allowTouchMove: true,
+  slidesPerGroup: 1,
+  autoHeight: true,
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -28,7 +30,7 @@ const swiper = new Swiper('.swiper', {
 
     768: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     1200: {
       slidesPerView: 4,

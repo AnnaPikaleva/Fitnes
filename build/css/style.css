@@ -2205,8 +2205,23 @@ svg {
   object-fit: cover;
 }
 
-.coaches__container {
+.coaches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 53px 47px 91px;
+}
+
+.coaches__container {
+  position: relative;
+  width: 90%;
+  max-width: 1160px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .coaches__container h2 {
@@ -2217,57 +2232,68 @@ svg {
   font-weight: 600;
   margin: 0;
   margin-bottom: 48px;
-  padding-left: 58px;
+  padding-left: 3px;
 }
 
-.slider {
+.slider.swiper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.slider__line {
+.slider__line.swiper-wrapper {
   margin: 0;
   padding: 0;
-  padding: 0 40px;
   list-style: none;
 }
 
-.slider__button-arrow {
+.slider__button.swiper-button-next,
+.slider__button.swiper-button-prev {
   width: 16px;
-  height: 32px;
-  top: 50%;
-  border: none;
+  top: 65%;
   background-color: transparent;
-  background-image: url("../../img/svg/arrow.svg");
+  background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-color: red;
   cursor: pointer;
+  padding: 0;
+  border: none;
+  position: absolute;
+  height: 32px;
+  border: none;
+}
+
+.slider__button.swiper-button-next::after,
+.slider__button.swiper-button-prev::after {
+  content: "";
 }
 
 .slider__prev {
   -webkit-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
+  left: -56px;
 }
 
-.coach-info__more {
+.slider__next {
+  right: -56px;
+}
+
+.slider__subitem {
   display: none;
 }
 
-.coach-info {
+.slider__item.swiper-slide {
   position: relative;
   aspect-ratio: 260/294;
   cursor: pointer;
-  background-color: #b6bdcc;
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
 }
 
-.coach-info:hover .coach-info__more {
+.slider__item.swiper-slide:hover .slider__subitem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2287,10 +2313,13 @@ svg {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
 }
 
-.coach-info h3 {
+.slider__item.swiper-slide:hover h3 {
+  display: none;
+}
+
+.slider__item h3 {
   margin: 0;
   font-weight: 700;
   position: absolute;
@@ -2299,29 +2328,42 @@ svg {
   text-align: center;
 }
 
-.coach-info__more h3 {
+.slider__subitem h4 {
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
   position: static;
   margin-bottom: 10px;
 }
 
-.coach-info__more p {
+.slider__subitem p {
   color: #b6bdcc;
   margin: 0;
   margin-bottom: 25px;
 }
 
-.coach-info__more ul {
+.slider__subitem ul {
+  margin: 0;
+  padding: 0;
   list-style: disc;
 }
 
-.coach-info__more li {
+.slider__subitem li {
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 14px;
 }
 
-.coach-info__more li::marker {
+.slider__subitem li::marker {
   font-size: 1.2em;
+}
+
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .advantages {
@@ -3094,6 +3136,47 @@ svg {
     aspect-ratio: 386/292;
   }
 
+  .coaches {
+    padding: 50px 101px 100px;
+  }
+
+  .coaches__container h2 {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 31px;
+  }
+
+  .slider__item.swiper-slide {
+    aspect-ratio: 268/294;
+  }
+
+  .slider__item.swiper-slide:focus-within .slider__subitem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(16, 38, 84, 0.89);
+    padding: 40px 34px 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .slider__item.swiper-slide:focus-within h3 {
+    display: none;
+  }
+
   .advantages__container {
     padding: 100px 45px;
   }
@@ -3328,6 +3411,39 @@ svg {
 
   .event__img {
     aspect-ratio: 290/292;
+  }
+
+  .coaches {
+    padding: 35px 47px 70px;
+  }
+
+  .coaches__container h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+
+  .slider__button.swiper-button-next,
+  .slider__button.swiper-button-prev {
+    width: 10px;
+    height: 19px;
+  }
+
+  .slider__prev {
+    left: -32px;
+  }
+
+  .slider__next {
+    right: -32px;
+  }
+
+  .slider__item.swiper-slide {
+    aspect-ratio: 226/274;
+  }
+
+  .slider__subitem p {
+    font-size: 14px;
+    line-height: 21px;
   }
 
   .advantages__container {
