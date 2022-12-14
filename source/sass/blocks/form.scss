@@ -4,6 +4,16 @@
 
 .form__container {
   padding: 56px 170px 70px 103px;
+
+  @media (max-width: $vp-1199) {
+    padding: 70px 163px 70px 133px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 15px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .form__container h2 {
@@ -15,6 +25,18 @@
   letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
 }
 
 .form__apply {
@@ -22,4 +44,15 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
+
+  @media (max-width: $vp-1199) {
+
+  }
+
+  @media (max-width: $vp-767) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
 }

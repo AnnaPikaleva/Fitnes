@@ -16,7 +16,6 @@
 
 .event__announcement {
   max-width: 500px;
-  // width: 36.6%;
   background-color: $backgroundcolor-red;
   padding: 85px 78px;
   display: grid;
@@ -27,7 +26,6 @@
   box-sizing: border-box;
 
   @media (max-width: $vp-1199) {
-    // max-width: 292px;
     padding: 51px 45px;
     width: 38%;
   }
@@ -54,8 +52,6 @@
     line-height: 46px;
     margin-bottom: 15px;
     max-width: 117px;
-    // text-align: center;
-    // margin-left: auto;
   }
 
   @media (max-width: $vp-767) {

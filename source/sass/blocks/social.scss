@@ -4,6 +4,10 @@
   list-style: none;
   max-width: 130px;
   display: flex;
+
+  @media (max-width: $vp-767) {
+    margin-top: 40px;
+  }
 }
 
 .social__item {

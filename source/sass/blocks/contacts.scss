@@ -1,5 +1,13 @@
 .contacts__container {
   padding: 56px 120px 70px;
+
+  @media (max-width: $vp-1199) {
+    padding: 70px 163px 70px 133px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 15px;
+  }
 }
 
 .contacts__container h2 {
@@ -11,6 +19,14 @@
   letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 33px;
+
+  @media (max-width: $vp-1199) {
+
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 50px;
+  }
 }
 
 .contacts__list {
@@ -33,6 +49,20 @@
     bottom: 50%;
     left: 33%;
     transform: rotate(90deg);
+  }
+
+  @media (max-width: $vp-1199) {
+
+  }
+
+  @media (max-width: $vp-767) {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 

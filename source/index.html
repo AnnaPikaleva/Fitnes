@@ -228,7 +228,7 @@
           <h2>Тренеры</h2>
           <div class="slider swiper">
             <ul class="slider__line swiper-wrapper">
-              <li class="slider__item swiper-slide">
+              <li class="slider__item swiper-slide" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="./img/trainer-1.webp, ./img/trainer-1@2x.webp 2x">
                   <img class="slider__img" src="./img/trainer-1.webp" srcset="./img/trainer-1@2x.webp 2x" width="260" height="294" alt="Фото тренера Анна Павлова.">
@@ -406,6 +406,7 @@
               <div class="offer__img-wrap">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="./img/girl-in-blue-suit.webp, ./img/girl-in-blue-suit@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/girl-in-blue-tablet.webp, ./img/girl-in-blue-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/girl-in-blue.webp, ./img/girl-in-blue@2x.webp 2x ">
                   <img class="offer__img" src="./img/girl-in-blue.jpg" srcset="./img/girl-in-blue@2x.jpeg 2x" width="280" height="462" alt="Девушка в голубом спорткостюме.">
                 </picture>
@@ -427,10 +428,9 @@
       <section class="review">
         <div class="review__container container">
           <h2>Отзывы</h2>
-            <div class="carousel">
-              <button class="carousel__button-arrow carousel__prev" type="button" aria-label="Предыдущее фото"></button>
-              <ul class="carousel__track">
-                <li class="carousel__item">
+            <div class="carousel swiper">
+              <ul class="carousel__track swiper-wrapper">
+                <li class="carousel__item swiper-slide">
                   <div class="carousel__img">
                     <picture>
                       <source type="image/avatar" srcset="./img/avatar.webp, ./img/avatar@2x.webp 2x ">
@@ -440,7 +440,7 @@
                   <span>Анна Орлова</span>
                   <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </li>
-                <li class="carousel__item">
+                <li class="carousel__item swiper-slide">
                   <div class="carousel__img">
                     <picture>
                       <source type="image/avatar" srcset="./img/avatar.webp, ./img/avatar@2x.webp 2x ">
@@ -451,25 +451,24 @@
                   <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </li>
               </ul>
-              <button class="carousel__button-arrow carousel__next" type="button" aria-label="Следующее фото"></button>
-          </div>
+            </div>
+          <button class="carousel__button swiper-button-prev carousel__prev" type="button" aria-label="Предыдущее фото"></button>
+          <button class="carousel__button swiper-button-next carousel__next" type="button" aria-label="Следующее фото"></button>
         </div>
       </section>
       <div class="index-columns container">
         <section class="form">
           <div class="form__container">
-            <div class="">
-              <h2>Бесплатное занятие </h2>
-              <form class="form__apply field" action="https://echo.htmlacademy.ru" method="get" autocomplete="off" data-form>
-                <label>
-                  <input type="text" name="name" placeholder="Имя" minlength="1" data-user-name required>
-                </label>
-                <label>
-                  <input type="tel" placeholder="Телефон" name="phone-number" id="tel" data-tel required>
-                </label>
-                <button type="submit" data-button>Отправить</button>
-              </form>
-            </div>
+            <h2>Бесплатное занятие </h2>
+            <form class="form__apply field" action="https://echo.htmlacademy.ru" method="get" autocomplete="off" data-form>
+              <label>
+                <input type="text" name="name" placeholder="Имя" minlength="1" data-user-name required>
+              </label>
+              <label>
+                <input type="tel" placeholder="Телефон" name="phone-number" id="tel" data-tel required>
+              </label>
+              <button type="submit" data-button>Отправить</button>
+            </form>
           </div>
         </section>
         <section class="contacts">
@@ -502,13 +501,15 @@
         <a class="footer__logo">
           <p>SUPERGYM</p>
         </a>
-        <ul class="footer__nav-list">
+        <ul class="footer__nav-list footer__nav-list--first">
           <li class="footer__nav-item">
             <a href="#">Услуги</a>
           </li>
           <li class="footer__nav-item">
             <a href="#">Абонементы</a>
           </li>
+        </ul>
+        <ul class="footer__nav-list footer__nav-list--second">
           <li class="footer__nav-item">
             <a href="#">Акции</a>
           </li>

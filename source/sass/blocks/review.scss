@@ -1,8 +1,30 @@
-.review__container {
-  padding: 59px 103px 121px;
+.review {
   display: flex;
-  flex-direction: column;
+  padding: 59px 103px 121px;
   align-items: center;
+
+  @media (max-width: $vp-1199) {
+    padding: 50px 45px 100px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 35px 15px 70px;
+  }
+}
+
+.review__container {
+  position: relative;
+  width: 58.8%;
+  max-width: 640px;
+  align-items: center;
+
+  @media (max-width: $vp-1199) {
+    width: 83.4%;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 78%;
+  }
 }
 
 .review__container h2 {
@@ -13,4 +35,14 @@
   text-align: center;
   margin: 0;
   margin-bottom: 37px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }

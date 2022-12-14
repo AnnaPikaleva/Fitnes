@@ -14,6 +14,14 @@
     // border-image-source: linear-gradient(97.05deg, #ED0233 95.31%, #003EB7 17.6%);
     // border-image-slice: 1;
   }
+
+  @media (max-width: $vp-1199) {
+
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: none;
+  }
 }
 
 .field button {

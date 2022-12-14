@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-// import { sliderCoaches } from './vendor';
+// import './vendor.js';
+import {coachesSlider, reviewCarousel} from './vendor.js';
 
 // ---------------------------------
 
@@ -19,6 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     // sliderCoaches();
+    coachesSlider();
+    reviewCarousel();
   });
 });
 
