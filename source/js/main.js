@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // sliderCoaches();
     coachesSlider();
     reviewCarousel();
+    findVideos();
   });
 });
 
@@ -67,17 +68,55 @@ function onTabClick(item) {
 
 document.querySelector('.tabs__item').click();
 
-// Slider
-// const items = document.querySelectorAll('.slider__item');
-// let slider = [];
-// const rightButton = document.querySelector('.slider__next');
-// const leftButton = document.querySelector('.slider__prev');
+// Video
 
-// for (let i = 0; i < items.length; i++) {
-//   slider[i] = items[i];
-//   console.log(slider[i]);
-//   items[i].remove();
-// }
+function findVideos() {
+  const videos = document.querySelectorAll('.video');
+
+  for (let i = 0; i < videos.length; i++) {
+    setupVideo(videos[i]);
+  }
+}
+
+function setupVideo(video) {
+  let link = video.querySelector('.video__link');
+  let button = video.querySelector('.video__button');
+  let id = parseMediaURL();
+
+  video.addEventListener('click', () => {
+    let iframe = createIframe(id);
+
+    link.remove();
+    button.remove();
+    video.appendChild(iframe);
+  });
+
+  link.removeAttribute('href');
+}
+
+function parseMediaURL() {
+  let regexp = /https:\/\/(?:youtu\.be\/|(?:[a-z]{2,3}\.)?youtube\.com\/watch(?:\?|#\!)v=)([\w-]{11}).*/gi;
+  let match = regexp.exec(document.querySelector('.video__link').href)[1];
+
+  return match;
+}
+
+function createIframe(id) {
+  let iframe = document.createElement('iframe');
+
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('allow', 'autoplay');
+  iframe.setAttribute('src', generateURL(id));
+  iframe.classList.add('video__media');
+
+  return iframe;
+}
+
+function generateURL(id) {
+  let query = '?autoplay=1';
+
+  return 'https://www.youtube.com/embed/' + id + query;
+}
 
 // ---------------------------------
 

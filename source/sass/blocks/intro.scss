@@ -112,8 +112,9 @@
 
 .intro__img {
   @media (max-width: $vp-1199) {
-    width: 324px;
-    height: 390px;
+    aspect-ratio: 324/390;
+    max-width: 324px;
+    object-fit: cover;
   }
 
   @media (max-width: $vp-767) {

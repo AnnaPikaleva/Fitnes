@@ -35,6 +35,7 @@
             <a class="intro__button button" href="#tickets">Купить абонемент</a>
           </div>
           <picture>
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/photo-main-block-tablet.webp, ./img/photo-main-block-tablet@2x.webp 2x">
             <source type="image/webp" srcset="./img/photo-main-block.webp, ./img/photo-main-block@2x.webp 2x">
             <img class="intro__img" src="./img/photo-main-block.png" srcset="./img/photo-main-block@2x.png 2x" width="500" height="556" alt="Фото мужчины в футболке с буквой С.">
           </picture>
@@ -52,17 +53,17 @@
             <source type="image/webp" srcset="./img/gym.webp, ./img/gym@2x.webp 2x ">
             <img class="block-gym__img" src="./img/gym.jpg" srcset="./img/gym@2x.jpeg 2x" width="600" height="401" alt="Фото мужчины в футболке с буквой С.">
           </picture>
-          <a class="block-gym__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+          <div class="block-gym__link">
             <div class="block-gym__video video video--enabled">
-              <!-- <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw"> -->
+              <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
                   <picture>
                     <source type="image/webp" srcset="./img/video.webp, ./img/video@2x.webp 2x">
                     <img class="video__media" src="./img/video.png" srcset="./img/video@2x.png 2x" alt="Тренажерный зал SUPERGYM">
                   </picture>
-              <!-- </a> -->
+              </a>
               <button class="video__button" aria-label="Запустить видео"></button>
             </div>
-          </a>
+          </div>
         </div>
       </section>
       <section class="tickets">
@@ -407,7 +408,7 @@
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="./img/girl-in-blue-suit.webp, ./img/girl-in-blue-suit@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1199px)" srcset="./img/girl-in-blue-tablet.webp, ./img/girl-in-blue-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/girl-in-blue.webp, ./img/girl-in-blue@2x.webp 2x ">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="./img/girl-in-blue.webp, ./img/girl-in-blue@2x.webp 2x ">
                   <img class="offer__img" src="./img/girl-in-blue.jpg" srcset="./img/girl-in-blue@2x.jpeg 2x" width="280" height="462" alt="Девушка в голубом спорткостюме.">
                 </picture>
               </div>
@@ -548,7 +549,7 @@
         </ul>
       </div>
     </footer>
-    <script src="js/vendor.min.js"></script>
+    <!-- <script src="js/vendor.min.js"></script> -->
     <script src="js/main.min.js"></script>
   </body>
 </html>
