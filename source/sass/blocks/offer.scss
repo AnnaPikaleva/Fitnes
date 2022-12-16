@@ -41,90 +41,10 @@
   }
 }
 
-.offer__item-main {
-  color: $color-default-white;
-  padding: 0;
-  min-height: auto;
-  width: auto;
-  display: flex;
-  grid-row: 1/3;
-
-  @media (max-width: $vp-1199) {
-    grid-row: 1/2;
-    grid-column: 1/3;
-  }
-
-  @media (max-width: $vp-767) {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-.offer__subitem {
-  display: flex;
-  flex-direction: column;
-  background-color: $background-red;
-  padding: 45px;
-  width: 50%;
-  min-height: 462px;
-  box-sizing: border-box;
-
-  @media (max-width: $vp-1199) {
-    width: 41.2%;
-  }
-
-  @media (max-width: $vp-767) {
-    width: 100%;
-    align-items: center;
-    min-height: 299px;
-  }
-}
-
-.offer__subitem h3 {
-  font-size: 28px;
-  line-height: 44px;
-  margin: 0;
-  margin-bottom: 25px;
-  max-width: 142px;
-
-  @media (max-width: $vp-767) {
-    text-align: center;
-  }
-}
-
-.offer__subitem span {
-  font-size: 70px;
-  line-height: 109px;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: -20px;
-}
-
-.offer__subitem p {
-  max-width: 190px;
-  margin: 0;
-  margin-bottom: 128px;
-
-  @media (max-width: $vp-767) {
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-  }
-}
-
-.offer__subitem a {
-  color: $color-default-white;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  text-decoration-line: underline;
-}
-
 .offer__item {
   max-width: 560px;
   min-height: 211px;
-  padding: 35px;
+  padding: 25px 28px 22px;
   width: 100%;
   box-sizing: border-box;
   color: $color-card;
@@ -132,18 +52,55 @@
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
 
+  &--main {
+    color: $color-default-white;
+    padding: 0;
+    min-height: auto;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    border: none;
+    grid-row: 1/3;
+  }
+
   @media (max-width: $vp-1199) {
     max-width: none;
+
+    &--main {
+      grid-row: 1/2;
+      grid-column: 1/3;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    &--main {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 }
 
 .offer__item a {
+  font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  text-decoration-line: underline;
+  padding-bottom: 5px;
   color: $color-card;
+  position: relative;
+  border-bottom: 1px solid $color-card;
+
+  &:hover {
+    color: $color-red-line;
+    border-bottom: 1px solid $color-red-line;
+  }
+
+  &:focus {
+    outline: none;
+    color: $color-red-line;
+    border-bottom: 1px solid $color-red-line;
+  }
 }
 
 .offer__item h3 {
@@ -155,7 +112,7 @@
 
 .offer__item p {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 65px;
 }
 
 .offer__img-wrap {
@@ -181,5 +138,75 @@
 
   @media (max-width: $vp-767) {
     aspect-ratio: 290/299;
+  }
+}
+
+.offer__subitem {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-red;
+  padding: 35px 45px;
+  width: 50%;
+  min-height: 462px;
+  box-sizing: border-box;
+
+  @media (max-width: $vp-1199) {
+    width: 41.2%;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    align-items: center;
+    min-height: 299px;
+  }
+}
+
+.offer__subitem h3 {
+  font-size: 28px;
+  line-height: 44px;
+  max-width: 142px;
+  margin-bottom: 0;
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
+}
+
+.offer__subitem span {
+  font-size: 70px;
+  line-height: 109px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -25px;
+}
+
+.offer__subitem p {
+  margin-bottom: 187px;
+  font-size: 18px;
+  line-height: 25px;
+
+  @media (max-width: $vp-767) {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+.offer__subitem a {
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  border-bottom: 1px solid $color-default-white;
+  width: 45%;
+
+  &:hover {
+    color: $color-card;
+    border-bottom: 1px solid $color-card;
+  }
+
+  &:focus {
+    outline: none;
+    color: $color-card;
+    border-bottom: 1px solid $color-card;
   }
 }

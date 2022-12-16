@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     coachesSlider();
     reviewCarousel();
     findVideos();
+    moveToBlock();
   });
 });
 
@@ -30,18 +31,18 @@ document.querySelectorAll('.nojs').forEach((item) => item.classList.remove('nojs
 
 // Move to block
 
-const anchors = document.querySelectorAll('a[href]');
+const moveToBlock = () => {
+  const button = document.querySelector('.intro__wrapper > a');
+  const block = document.querySelector('.membership');
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (event) {
+  button.addEventListener('click', function (event) {
     event.preventDefault();
-    const blockId = anchor.getAttribute('href');
-    document.querySelector('' + blockId).scrollIntoView({
+    block.scrollIntoView({
+      block: 'nearest',
       behavior: 'smooth',
-      block: 'start',
     });
   });
-}
+};
 
 // Tabs
 const triggers = document.querySelectorAll('.tabs__item');

@@ -14,7 +14,7 @@
   justify-content: space-between;
 
   @media (max-width: $vp-1199) {
-    padding: 40px 45px 0;
+    padding: 35px 45px 0;
   }
 
   @media (max-width: $vp-767) {
@@ -50,6 +50,16 @@
   line-height: 31px;
   color: $color-default-white;
   letter-spacing: 0.03em;
+
+  &:hover {
+    color: $color-card;
+    text-shadow: $color-default-white 1px 0 10px;
+  }
+
+  &:focus {
+    outline: none;
+    color: $color-card;
+  }
 
   @media (max-width: $vp-1199) {
     font-size: 24px;

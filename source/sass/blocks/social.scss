@@ -18,6 +18,20 @@
   }
 }
 
+.social__item a {
+  &:focus svg {
+    fill: $color-red-line;
+  }
+}
+
 svg {
   fill: #030a1a;
+
+  &:hover {
+    fill: $color-red-line;
+  }
+
+  &:focus {
+    fill: $color-red-line;
+  }
 }

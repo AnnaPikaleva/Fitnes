@@ -1,5 +1,4 @@
 .button {
-  // display: inline-flex;
   padding: 19px 24px;
   font-weight: 700;
   font-size: 12px;
@@ -21,8 +20,8 @@
 
   @media (max-width: $vp-1199) {
     padding: 16px 24px;
-    font-size: 10px;
-    line-height: 12px;
+    // font-size: 10px;
+    // line-height: 12px;
     border-width: 2px;
   }
 

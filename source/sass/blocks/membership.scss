@@ -1,20 +1,7 @@
 .membership {
   background-color: $backgroundcolor-light-gray;
-  // background-image: linear-gradient (to bottom, $backgroundcolor-light-gray, $backgroundcolor-light-gray 90%, $color-default-white 90%);
+  scroll-behavior: smooth;
   position: relative;
-
-  // &::after {
-  //   content: "";
-  //   width: 321px;
-  //   height: 384px;
-  //   background-image: url("../img/weight-plates.png");
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: 0;
-  //   z-index: 1;
-  // }
 }
 
 .membership__container {
@@ -42,6 +29,12 @@
   margin: 0;
   margin-bottom: 17px;
   text-align: center;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 50px;
+    margin-left: -13px;
+  }
 }
 
 .membership__img {

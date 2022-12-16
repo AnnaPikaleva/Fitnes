@@ -1,8 +1,9 @@
 .index-columns {
   width: 100%;
   display: flex;
-  justify-content: center;
-  background-image: linear-gradient(to right, $color-font-dark, $color-font-dark 49%, $color-default-white 49%);
+  justify-content: flex-start;
+  background-image: linear-gradient(to right, $color-font-dark, $color-font-dark 50%, $color-default-white 50%);
+  padding: 56px 103px 60px;
 
   @media (max-width: $vp-1199) {
     flex-direction: column;

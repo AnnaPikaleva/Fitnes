@@ -43,7 +43,7 @@
   padding: 0;
   list-style: none;
   display: flex;
-  max-width: 440px;
+  max-width: 420px;
 
   @media (max-width: $vp-1199) {
     max-width: 421px;
@@ -74,8 +74,16 @@
   margin-right: 40px;
   font-size: 14px;
   line-height: 16px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 8px;
+
+  &:hover {
+    color: $color-red-line;
+  }
+
+  &:focus {
+    color: $color-red-line;
+    outline: none;
+  }
 
   @media (max-width: $vp-1199) {
     margin-right: 30px;
