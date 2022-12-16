@@ -118,6 +118,17 @@ function generateURL(id) {
   return 'https://www.youtube.com/embed/' + id + query;
 }
 
+// Validate
+
+const phoneInputs = document.querySelectorAll('input[data-tel]');
+
+for (let i = 0; i < phoneInputs.length; i++) {
+  let input = phoneInputs[i];
+  input.addEventListener('input', () => {
+    input.value = input.value.replace(/[^\d]/g, '');
+  });
+}
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

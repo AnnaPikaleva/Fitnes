@@ -2,7 +2,7 @@
   padding: 120px 103px 235px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   gap: 85px;
   position: relative;
 
@@ -40,7 +40,8 @@
   font-weight: 600;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 6px;
 
   @media (max-width: $vp-1199) {
     font-size: 42px;
@@ -51,7 +52,7 @@
 
 .block-gym__info p {
   &:first-of-type {
-    margin-bottom: 55px;
+    margin-bottom: 39px;
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
@@ -75,6 +76,8 @@
   }
 }
 
+
+
 .block-gym__img {
   width: 100%;
   height: auto;
@@ -83,16 +86,16 @@
 .block-gym__link {
   display: block;
   position: absolute;
-  width: 28.5%;
+  width: 26.6%;
   height: 0;
   padding-bottom: 18.25%;
-  top: 55%;
-  right: 32%;
+  top: 54.2%;
+  right: 33.8%;
 
   @media (max-width: $vp-1199) {
     top: auto;
     top: 75%;
-    right: 35%;
+    right: 32%;
   }
 
   @media (max-width: $vp-767) {
@@ -103,6 +106,10 @@
 }
 
 .block-gym__info .block-gym__subtext {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 7px;
+
   @media (max-width: $vp-1199) {
     display: none;
   }

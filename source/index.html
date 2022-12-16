@@ -30,15 +30,21 @@
         <div class="intro__container container">
           <div class="intro__wrapper">
             <h1>ФИТНЕС ЦЕНТР</h1>
-            <p>Тренажёрный зал Групповые занятия Кардио-зона </p>
-            <span>ОМСК</span>
-            <a class="intro__button button" href="#tickets">Купить абонемент</a>
+            <p>ОМСК</p>
+            <a class="intro__button button" href="#membership">Купить абонемент</a>
           </div>
-          <picture>
-            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/photo-main-block-tablet.webp, ./img/photo-main-block-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/photo-main-block.webp, ./img/photo-main-block@2x.webp 2x">
-            <img class="intro__img" src="./img/photo-main-block.png" srcset="./img/photo-main-block@2x.png 2x" width="500" height="556" alt="Фото мужчины в футболке с буквой С.">
-          </picture>
+          <ul class="intro__fitness-options">
+            <li>Тренажёрный зал</li>
+            <li>Групповые занятия</li>
+            <li>Кардио-зона</li>
+          </ul>
+          <div class="intro__img-wrap">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/photo-main-block-tablet.webp, ./img/photo-main-block-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/photo-main-block.webp, ./img/photo-main-block@2x.webp 2x">
+              <img class="intro__img" src="./img/photo-main-block.png" srcset="./img/photo-main-block@2x.png 2x" width="500" height="556" alt="Фото мужчины в футболке с буквой С.">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="block-gym">
@@ -47,7 +53,7 @@
             <h2>Тренажерный зал</h2>
             <p>Просторный зал площадью 900&nbsp;кв/м</p>
             <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-              <span class="block-gym__subtext">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span></p>
+              <span class="block-gym__subtext">В&nbsp;зале расположены отдельная зона для Crossfit&nbsp;и кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span></p>
           </div>
           <picture>
             <source type="image/webp" srcset="./img/gym.webp, ./img/gym@2x.webp 2x ">
@@ -66,16 +72,15 @@
           </div>
         </div>
       </section>
-      <section class="tickets">
-        <div class="tickets__container container" id="tickets">
+      <section class="membership">
+        <div class="membership__container container" id="membership">
           <h2>Абонементы</h2>
-          <div class="tickets__content">
-            <div class="tickets__tabs tabs">
+          <div class="membership__content">
+            <div class="membership__tabs tabs">
               <div class="tabs__items">
                 <a class="tabs__item" data-tab="#tab-1">1 месяц</a>
                 <a class="tabs__item" data-tab="#tab-2">6 месяцев</a>
                 <a class="tabs__item" data-tab="#tab-3">12 месяцев</a>
-                <!-- <a class="tabs__item" data-tab="#tab-4">2 месяцa</a> -->
               </div>
                 <ul class="tabs__block cards nojs" id="tab-1">
                   <li class="cards__item">
@@ -198,6 +203,11 @@
             </div>
           </div>
         </div>
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 768px)" srcset="./img/weight-plates.webp 1x, ./img/weight-plates@2.webp 2x"> -->
+            <source type="image/webp" srcset="./img/weight-plates.webp, ./img/weight-plates@2x.webp 2x">
+            <img class="membership__img" src="./img/weight-plates.png" srcset="./img/weight-plates@2x.png 2x" width="290" height="384" alt="Спортивные блины.">
+          </picture>
       </section>
       <section class="event">
         <div class="event__container container">
@@ -457,13 +467,13 @@
           <button class="carousel__button swiper-button-next carousel__next" type="button" aria-label="Следующее фото"></button>
         </div>
       </section>
-      <div class="index-columns container">
+      <div class="index-columns">
         <section class="form">
           <div class="form__container">
             <h2>Бесплатное занятие </h2>
             <form class="form__apply field" action="https://echo.htmlacademy.ru" method="get" autocomplete="off" data-form>
               <label>
-                <input type="text" name="name" placeholder="Имя" minlength="1" data-user-name required>
+                <input type="text" name="name" placeholder="Имя" minlength="1" required>
               </label>
               <label>
                 <input type="tel" placeholder="Телефон" name="phone-number" id="tel" data-tel required>
@@ -502,25 +512,27 @@
         <a class="footer__logo">
           <p>SUPERGYM</p>
         </a>
-        <ul class="footer__nav-list footer__nav-list--first">
-          <li class="footer__nav-item">
-            <a href="#">Услуги</a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#">Абонементы</a>
-          </li>
-        </ul>
-        <ul class="footer__nav-list footer__nav-list--second">
-          <li class="footer__nav-item">
-            <a href="#">Акции</a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#">Тренеры</a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#">Расписание</a>
-          </li>
-        </ul>
+        <div class="footer__nav-list">
+          <ul class="footer__nav-list footer__nav-list--first">
+            <li class="footer__nav-item">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Абонементы</a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list footer__nav-list--second">
+            <li class="footer__nav-item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Тренеры</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Расписание</a>
+            </li>
+          </ul>
+        </div>
         <ul class="social">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">

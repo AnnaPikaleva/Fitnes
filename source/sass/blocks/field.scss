@@ -1,4 +1,5 @@
 .field input {
+  color: $color-default-white;
   background-color: transparent;
   border: none;
   font-size: 14px;
@@ -8,11 +9,13 @@
   width: 100%;
   max-width: 190px;
 
-  &:hover,
+  &:hover {
+    border-bottom: 1px solid #ED0233;
+  }
+
   &:focus {
     border-bottom: 1px solid #ED0233;
-    // border-image-source: linear-gradient(97.05deg, #ED0233 95.31%, #003EB7 17.6%);
-    // border-image-slice: 1;
+    outline: none;
   }
 
   @media (max-width: $vp-1199) {

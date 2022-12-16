@@ -1,27 +1,14 @@
-// .cards {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   gap: 40px;
-
-//   @media (max-width: $vp-1199) {
-//     flex-direction: column;
-//   }
-// }
-
 .cards__item {
-  width: 26.3%;
+  width: 31%;
   min-width: 300px;
   min-height: 448px;
   background-color: $color-default-white;
-  padding: 68px 35px;
+  padding: 55px 35px;
   box-sizing: border-box;
   text-align: center;
   margin-bottom: 40px;
   border: 7px solid transparent;
+  z-index: 1;
 
   &:hover {
     border: 7px solid;
@@ -46,7 +33,7 @@
   font-size: 26px;
   line-height: 29px;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 10px;
 
   @media (max-width: $vp-767) {
     margin-bottom: 20px;
@@ -62,8 +49,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 29px;
-  margin-bottom: 59px;
+  margin-top: 10px;
+  margin-bottom: 57px;
 
   @media (max-width: $vp-767) {
     margin-bottom: 50px;
@@ -76,8 +63,8 @@
   font-weight: 700;
   line-height: 90px;
   margin: 0;
-  margin-top: -105px;
-  margin-left: 15px;
+  margin-top: -100px;
+  margin-left: 3px;
   z-index: 1;
 
   &:first-of-type {
@@ -94,13 +81,14 @@
 .cards__wrap-price-shadow span {
   font-family: $ff-rouble;
   color: $color-font-dark;
-  padding-left: 14px;
+  padding-left: 10px;
+  font-size: 52px;
 }
 
 .cards__button {
   color: $color-font-dark;
   border: 2px solid $color-font-dark;
-  padding: 27px 44px;
+  padding: 26px 44px 22px;
 
   &:hover,
   &:focus {

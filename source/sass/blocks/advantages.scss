@@ -3,7 +3,10 @@
 }
 
 .advantages__container {
-  padding: 146px 164px 91px;
+  padding: 146px 160px 91px 168px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media (max-width: $vp-1199) {
     padding: 100px 45px;
@@ -23,6 +26,7 @@
   text-align: center;
   margin: 0;
   margin-bottom: 55px;
+  padding-left: 9px;
 
   @media (max-width: $vp-1199) {
     font-size: 42px;
@@ -123,8 +127,8 @@
 }
 
 .advantages__item b {
-  font-size: 74px;
-  line-height: 111px;
+  font-size: 71px;
+  line-height: 49px;
   background-image: $color-red-to-blue-number;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -173,6 +177,16 @@
   &--comfort,
   &--experience {
     padding-bottom: 0;
+  }
+
+  &--area,
+  &--comfort {
+    grid-template-columns: 120px 1fr;
+  }
+
+  &--area span,
+  &--comfort span {
+    padding-left: 16px;
   }
 
   @media (max-width: $vp-1199) {
