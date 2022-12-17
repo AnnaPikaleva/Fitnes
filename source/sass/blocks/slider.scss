@@ -36,6 +36,10 @@
     box-shadow: 0 0 2px 2px #e8e8e897;
   }
 
+  @media (max-width: $vp-1199) {
+    top: 62.7%;
+  }
+
   @media (max-width: $vp-767) {
     width: 10px;
     height: 19px;

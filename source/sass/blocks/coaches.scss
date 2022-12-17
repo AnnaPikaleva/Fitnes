@@ -4,7 +4,7 @@
   padding: 53px 40px 91px;
 
   @media (max-width: $vp-1199) {
-    padding: 50px 101px 100px;
+    padding: 50px 68px 100px;
   }
 
   @media (max-width: $vp-767) {
@@ -33,6 +33,7 @@
     font-size: 42px;
     line-height: 50px;
     text-align: center;
+    margin-left: -5px;
     margin-bottom: 31px;
   }
 

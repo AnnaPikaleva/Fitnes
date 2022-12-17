@@ -10,7 +10,7 @@
   align-items: center;
 
   @media (max-width: $vp-1199) {
-    padding: 47px 45px;
+    padding: 40px 45px 42px;
   }
 
   @media (max-width: $vp-767) {
@@ -30,7 +30,9 @@
   margin: 0;
 
   @media (max-width: $vp-1199) {
-    padding-right: 62px;
+    padding-right: 44px;
+    font-size: 24px;
+    line-height: 29px;
   }
 
   @media (max-width: $vp-767) {
@@ -87,6 +89,8 @@
 
   @media (max-width: $vp-1199) {
     margin-right: 30px;
+    padding-bottom: 0;
+    margin-bottom: -2px;
   }
 
   @media (max-width: $vp-767) {

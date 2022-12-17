@@ -6,6 +6,8 @@
   padding: 56px 103px 60px;
 
   @media (max-width: $vp-1199) {
+    background-image: linear-gradient(to bottom, $color-font-dark, $color-font-dark 48%, $color-default-white 48%);;
     flex-direction: column;
+    padding: 63px 133px;
   }
 }
