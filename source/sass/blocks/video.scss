@@ -6,37 +6,12 @@
   padding-bottom: 62%;
   background-color: $color-default-black;
 
-  // &::before {
-  //   content: "";
-  //   width: 100%;
-  //   background-color: rgba(20, 54, 122, 0.5);
-  //   z-index: 1;
-  //   position: absolute;
-  //   height: 100%;
-  //   top: 0;
-  //   left: 0;
-  // }
-
-  // &:hover .video__button {
-  //   background-image: none;
-  // }
-
   &--enabled {
     cursor: pointer;
   }
 
-  // @media (max-width: $vp-1199) {
-  //   top: auto;
-  //   bottom: 16%;
-  //   right: 35%;
-  // }
-
   @media (max-width: $vp-767) {
-    // position: relative;
-    // top: auto;
-    // right: auto;
-    // bottom: auto;
-    // position: static;
+    padding-bottom: 51.8%;
   }
 }
 

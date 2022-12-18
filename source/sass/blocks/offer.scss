@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 15px 35px;
+    padding: 64px 15px 35px;
   }
 }
 
@@ -24,6 +24,13 @@
     font-size: 42px;
     line-height: 50px;
     margin-left: -12px;
+    margin-bottom: 38px;
+  }
+
+  @media (max-width: $vp-1199) {
+    font-size: 32px;
+    line-height: 38px;
+    // margin-left: -12px;
     margin-bottom: 38px;
   }
 }

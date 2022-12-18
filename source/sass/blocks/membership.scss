@@ -15,7 +15,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 15px;
+    padding: 65px 15px 70px;
     align-items: stretch;
   }
 }
@@ -36,6 +36,12 @@
     margin-left: -13px;
     margin-bottom: 21px;
   }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+    line-height: 38px;
+    // margin: 0;
+  }
 }
 
 .membership__img {
@@ -46,5 +52,9 @@
   @media (max-width: $vp-1199) {
     width: 341px;
     bottom: -124px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
   }
 }

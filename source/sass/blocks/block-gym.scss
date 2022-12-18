@@ -15,8 +15,10 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 0;
+    padding: 64px 0 70px;
     position: static;
+    align-items: flex-start;
+    gap: 33px;
   }
 }
 
@@ -50,6 +52,15 @@
     margin-bottom: 0;
     margin-left: -14px;
   }
+
+  @media (max-width: $vp-767) {
+    text-align: left;
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+  }
 }
 
 .block-gym__info p {
@@ -74,14 +85,15 @@
 
   @media (max-width: $vp-767) {
     max-width: none;
+
+    &:first-of-type {
+      margin-bottom: 23px;
+    }
   }
 }
 
-
-
 .block-gym__img {
   width: 660px;
-  // height: auto;
 
   @media (max-width: $vp-1199) {
     width: 100%;
@@ -95,6 +107,10 @@
 
   @media (max-width: $vp-1199) {
     aspect-ratio: 678/345;
+  }
+
+  @media (max-width: $vp-767) {
+    aspect-ratio: 320/313;
   }
 }
 
@@ -116,7 +132,8 @@
   @media (max-width: $vp-767) {
     position: static;
     width: 100%;
-    padding-bottom: 56.25%;
+    margin-top: 8px;
+    padding-bottom: 51.8%;
   }
 }
 

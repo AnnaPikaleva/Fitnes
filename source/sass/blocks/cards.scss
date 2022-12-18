@@ -23,10 +23,9 @@
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 35px;
     min-width: 290px;
     min-height: 384px;
-    padding: 55px 35px;
+    padding: 43px 35px;
   }
 }
 
@@ -38,7 +37,9 @@
   margin-bottom: 10px;
 
   @media (max-width: $vp-767) {
-    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
   }
 }
 
@@ -55,7 +56,7 @@
   margin-bottom: 57px;
 
   @media (max-width: $vp-767) {
-    margin-bottom: 50px;
+    margin-bottom: 29px;
   }
 }
 
@@ -67,7 +68,21 @@
   margin: 0;
   margin-top: -100px;
   margin-left: 3px;
+
   z-index: 1;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../../img/svg/rouble.svg");
+    background-repeat: no-repeat;
+    // background-size: ;
+    width: 24px;
+    height: 33px;
+    position: absolute;
+    bottom: 18px;
+    right: 0;
+  }
 
   &:first-of-type {
     color: $color-price-shadow;
@@ -77,17 +92,36 @@
     opacity: 0.48;
     position: static;
     margin: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 48px;
+    line-height: 72px;
+    margin-top: -77px;
+    margin-left: 2px;
+    padding-right: 35px;
+
+    &:first-of-type {
+      font-size: 80px;
+      line-height: 120px;
+      padding: 0;
+    }
   }
 }
 
-.cards__wrap-price-shadow span {
-  font-family: $ff-rouble;
-  color: $color-font-dark;
-  padding-left: 10px;
-  font-size: 52px;
-}
+// .cards__wrap-price-shadow span {
+//   font-family: $ff-rouble;
+//   color: $color-font-dark;
+//   padding-left: 10px;
+//   font-size: 52px;
+// }
 
 .cards__button {
+  display: block;
   color: $color-font-dark;
   border: 2px solid $color-font-dark;
   padding: 26px 44px 22px;
@@ -101,5 +135,10 @@
 
   @media (max-width: $vp-1199) {
     padding: 26px 44px 24px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 26px 25px 24px;
+    width: 100%;
   }
 }

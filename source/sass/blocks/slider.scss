@@ -41,6 +41,7 @@
   }
 
   @media (max-width: $vp-767) {
+    top: 65%;
     width: 10px;
     height: 19px;
   }
@@ -121,6 +122,10 @@
 
   @media (max-width: $vp-767) {
     aspect-ratio: 226/274;
+
+    &:focus-within .slider__subitem {
+      padding: 30px 25px 15px;
+    }
   }
 }
 
@@ -152,6 +157,12 @@
     margin-bottom: 2px;
     padding-right: 3%;
   }
+
+  @media (max-width: $vp-767) {
+    margin-top: 13px;
+    margin-bottom: 2px;
+    padding-right: 2%;
+  }
 }
 
 .slider__subitem p {
@@ -167,8 +178,8 @@
   }
 
   @media (max-width: $vp-767) {
-    font-size: 14px;
-    line-height: 21px;
+    padding-right: 0;
+    margin-bottom: 29px;
   }
 }
 
@@ -180,6 +191,10 @@
 
   @media (max-width: $vp-1199) {
     padding-left: 17.5%;
+  }
+
+  @media (max-width: $vp-1199) {
+    padding-left: 15.2%;
   }
 }
 
@@ -201,5 +216,9 @@
 
   @media (max-width: $vp-1199) {
     aspect-ratio: 268/294;
+  }
+
+  @media (max-width: $vp-767) {
+    aspect-ratio: 226/274;
   }
 }
