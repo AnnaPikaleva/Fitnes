@@ -1,6 +1,7 @@
 .cards__item {
   width: 31%;
   min-width: 300px;
+  max-width: 360px;
   min-height: 448px;
   background-color: $color-default-white;
   padding: 55px 35px;
@@ -20,6 +21,7 @@
     width: 100%;
     padding: 57px 35px 53px;
     margin-bottom: 0;
+    max-width: none;
   }
 
   @media (max-width: $vp-767) {
@@ -53,7 +55,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  margin-bottom: 57px;
+  margin-bottom: 33px;
 
   @media (max-width: $vp-767) {
     margin-bottom: 29px;
@@ -66,8 +68,9 @@
   font-weight: 700;
   line-height: 90px;
   margin: 0;
-  margin-top: -100px;
+  margin-top: -94px;
   margin-left: 3px;
+  padding-right: 45px;
 
   z-index: 1;
   position: relative;
@@ -76,11 +79,11 @@
     content: "";
     background-image: url("../../img/svg/rouble.svg");
     background-repeat: no-repeat;
-    // background-size: ;
-    width: 24px;
-    height: 33px;
+    background-size: contain;
+    width: 30px;
+    height: 42px;
     position: absolute;
-    bottom: 18px;
+    bottom: 24px;
     right: 0;
   }
 
@@ -92,6 +95,7 @@
     opacity: 0.48;
     position: static;
     margin: 0;
+    padding: 0;
 
     &::after {
       display: none;
@@ -113,18 +117,13 @@
   }
 }
 
-// .cards__wrap-price-shadow span {
-//   font-family: $ff-rouble;
-//   color: $color-font-dark;
-//   padding-left: 10px;
-//   font-size: 52px;
-// }
-
 .cards__button {
   display: block;
   color: $color-font-dark;
   border: 2px solid $color-font-dark;
-  padding: 26px 44px 22px;
+  padding: 24px 44px;
+  width: 76%;
+  margin: 0 auto;
 
   &:hover,
   &:focus {
@@ -134,11 +133,13 @@
   }
 
   @media (max-width: $vp-1199) {
-    padding: 26px 44px 24px;
+    width: 58.5%;
+    padding: 25px 44px 24px;
   }
 
   @media (max-width: $vp-767) {
     padding: 26px 25px 24px;
     width: 100%;
+    margin: 0;
   }
 }

@@ -54,4 +54,9 @@
     padding-bottom: 16px 45px 15px;
     width: 94%;
   }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    margin-top: 10px;
+  }
 }

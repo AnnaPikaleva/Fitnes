@@ -1,6 +1,10 @@
 .intro {
   background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
   position: relative;
+
+  @media (max-width: $vp-767) {
+    padding: 115px 15px 80px;
+  }
 }
 
 .intro__container {
@@ -9,21 +13,27 @@
   // grid-template-rows: repeat(3, 1fr);
   // align-items: flex-end;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 51px 188px 51px 103px;
+  padding: 51px 103px 51px 218px;
   column-gap: 19px;
 
   @media (max-width: $vp-1199) {
-    justify-content: flex-end;
+    justify-content: center;
     padding: 82px 45px;
-    gap: 30px;
+    gap: 20px;
+    // margin: 0 auto;
   }
 
   @media (max-width: $vp-767) {
+    padding: 0;
+    // margin: 0 auto;
+    gap: 0;
     display: block;
-    padding: 115px 15px 80px;
+    // display: block;
+    // padding: 115px 15px 80px;
     position: relative;
+    max-width: 500px;
     // justify-content: center;
     // flex-direction: row-reverse;
     // gap: 0;
@@ -54,8 +64,8 @@
     max-width: none;
     // justify-content: center;
     // grid-column: 2/3;
-    display: block;
-    position: relative;
+    // display: block;
+    // position: relative;
   }
 }
 
@@ -77,14 +87,17 @@
   @media (max-width: $vp-1199) {
     font-size: 72px;
     line-height: 86px;
-    width: 193px;
+    // width: 193px;
     text-transform: none;
-    padding-right: 0;
+    // padding-right: 0;
   }
 
   @media (max-width: $vp-767) {
+    // max-width: 400px;
     width: auto;
     padding-top: 41px;
+    padding-right: 0;
+    margin: 0 auto;
   }
 }
 
@@ -104,17 +117,17 @@
   @media (max-width: $vp-1199) {
     font-size: 30px;
     line-height: 41px;
-    padding: 0;
+    // padding: 0;
     text-align: right;
     margin-bottom: 5px;
-    padding-right: 6px;
+    padding-right: 16px;
   }
 
   @media (max-width: $vp-767) {
     font-size: 24px;
     line-height: 30px;
     position: absolute;
-    top: -2px;
+    top: -3px;
     right: 5px;
     padding: 0;
     margin: 0;
@@ -130,14 +143,17 @@
   left: 121px;
 
   @media (max-width: $vp-1199) {
-    width: 113px;
-    top: 48.2%;
-    left: 45px;
+    width: 170px;
+    order: -1;
+    position: static;
+    margin-top: 43px;
   }
 
   @media (max-width: $vp-767) {
-    top: 233px;
-    left: 15px;
+    width: auto;
+    position: absolute;
+    top: 76px;
+    left: 0;
   }
 }
 
@@ -157,12 +173,10 @@
   margin-right: 5%;
 
   @media (max-width: $vp-1199) {
-    width: 183px;
-    margin-top: 37px;
-    margin-bottom: 23px;
+    width: 93%;
+    margin: 37px auto 23px;
     border-width: 4px;
     padding: 19px;
-    margin-right: 0;
   }
 
   @media (max-width: $vp-767) {
