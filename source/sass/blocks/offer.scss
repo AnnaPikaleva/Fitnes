@@ -59,11 +59,10 @@
 
 .offer__item p {
   margin: 0;
-  margin-bottom: 65px;
   margin-bottom: auto;
 
   @media (max-width: $vp-1199) {
-    margin-bottom: auto;
+    // margin-bottom: auto;
     line-height: 22px;
   }
 }
@@ -161,7 +160,6 @@
 }
 
 .offer__img-wrap {
-  min-width: 280px;
   aspect-ratio: 280/462;
   background-image: url("../img/girl-in-blue.webp");
   background-repeat: no-repeat;

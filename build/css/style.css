@@ -1143,8 +1143,8 @@ button,
 
 .button:hover,
 .button:focus {
-  background-image: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background-image: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
 }
 
@@ -1491,7 +1491,7 @@ svg:focus {
 }
 
 .intro {
-  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   position: relative;
 }
 
@@ -1710,6 +1710,7 @@ svg:focus {
   margin-bottom: 40px;
   border: 7px solid transparent;
   z-index: 1;
+  cursor: pointer;
 }
 
 .cards__item:hover {
@@ -1799,8 +1800,8 @@ svg:focus {
 
 .cards__button:hover,
 .cards__button:focus {
-  background-image: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background-image: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border: none;
   color: #ffffff;
 }
@@ -1935,6 +1936,13 @@ svg:focus {
   width: 95%;
   margin-top: 22px;
   padding: 24px;
+}
+
+.event__button:hover,
+.event__button:focus {
+  background-image: -o-linear-gradient(352.95deg, #ed0233 1%, #003eb7 95.31%);
+  background-image: linear-gradient(97.05deg, #ed0233 1%, #003eb7 95.31%);
+  color: #ffffff;
 }
 
 .event__img {
@@ -2213,8 +2221,8 @@ svg:focus {
 .advantages__item b {
   font-size: 71px;
   line-height: 49px;
-  background-image: -o-linear-gradient(307.49deg, #D10A42 0%, #0041CA 87.33%);
-  background-image: linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
+  background-image: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
+  background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2325,7 +2333,6 @@ svg:focus {
 
 .offer__item p {
   margin: 0;
-  margin-bottom: 65px;
   margin-bottom: auto;
 }
 
@@ -2408,7 +2415,6 @@ svg:focus {
 }
 
 .offer__img-wrap {
-  min-width: 280px;
   aspect-ratio: 280/462;
   background-image: url("../img/girl-in-blue.webp");
   background-repeat: no-repeat;
@@ -2762,8 +2768,8 @@ svg:focus {
 
 .field button:hover,
 .field button:focus {
-  background-image: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background-image: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
 }
 
@@ -3414,7 +3420,6 @@ svg:focus {
   }
 
   .offer__item p {
-    margin-bottom: auto;
     line-height: 22px;
   }
 

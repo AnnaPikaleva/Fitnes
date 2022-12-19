@@ -14,7 +14,6 @@
   align-items: center;
 
   @media (max-width: $vp-1199) {
-    // justify-content: flex-start;
     padding: 40px 45px 42px;
   }
 
@@ -68,7 +67,6 @@
     gap: 75px;
     align-items: center;
   }
-
 }
 
 .footer__nav-list {

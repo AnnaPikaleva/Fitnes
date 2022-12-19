@@ -172,6 +172,12 @@
   margin-top: 22px;
   padding: 24px;
 
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(97.05deg, #ed0233 1%, #003eb7 95.31%);
+    color: $color-default-white;
+  }
+
   @media (max-width: $vp-1199) {
     width: 100%;
     font-size: 10px;
