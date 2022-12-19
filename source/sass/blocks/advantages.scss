@@ -159,7 +159,7 @@
   align-items: flex-start;
   column-gap: 32px;
   box-sizing: border-box;
-  padding-bottom: 54px;
+  padding-bottom: 76px;
 
   &--middle {
     width: 240px;
@@ -171,8 +171,7 @@
     text-align: center;
     grid-row: 1/3;
     grid-column: 2/3;
-    align-self: center;
-    margin-top: -3px;
+    align-self: flex-start;
   }
 
   &--middle b {
@@ -201,7 +200,7 @@
   &--comfort,
   &--experience {
     padding-bottom: 0;
-    padding-top: 107px;
+    padding-top: 85px;
   }
 
   &--area,
@@ -227,6 +226,7 @@
       grid-column: 2/4;
       width: 100%;
       min-width: 442px;
+      align-self: center;
     }
 
     &--middle b {

@@ -26,28 +26,30 @@
   }
 }
 
-.footer__logo p {
-  color: $color-default-white;
-  font-family: $ff-alumni;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.02em;
-  margin: 0;
+.footer__logo {
+  display: block;
 
   @media (max-width: $vp-1199) {
     padding-right: 15px;
-    font-size: 24px;
-    line-height: 29px;
   }
 
   @media (max-width: $vp-767) {
-    font-size: 20px;
-    line-height: 20px;
     margin-bottom: -10px;
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
+  }
+}
+
+.footer__logo img {
+  @media (max-width: $vp-1199) {
+    width: 82px;
+    height: 18px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 68px;
+    height: 15px;
   }
 }
 

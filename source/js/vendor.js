@@ -25,8 +25,8 @@ const coachesSlider = () => {
     },
 
     navigation: {
-      nextEl: '.slider__next',
-      prevEl: '.slider__prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
 };
@@ -37,8 +37,8 @@ const reviewCarousel = () => {
     loop: false,
 
     navigation: {
-      nextEl: '.carousel__next',
-      prevEl: '.carousel__prev',
+      nextEl: '.swiper-button--carousel-next',
+      prevEl: '.swiper-button--carousel-prev',
     },
   });
 };

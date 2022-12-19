@@ -40,11 +40,11 @@
   @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 38px;
-    // margin: 0;
   }
 }
 
 .membership__img {
+  object-fit: cover;
   position: absolute;
   bottom: -153px;
   right: 0;

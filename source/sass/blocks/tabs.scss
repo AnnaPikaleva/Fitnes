@@ -1,4 +1,4 @@
-.tabs__items {
+.tabs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -90,6 +90,7 @@
   @media (max-width: $vp-1199) {
     &--active {
       flex-direction: column;
+      gap: 40px;
     }
   }
 

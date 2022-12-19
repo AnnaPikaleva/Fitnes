@@ -41,7 +41,6 @@
 
   @media (max-width: $vp-767) {
     width: 68px;
-    // padding-left: 15px;
     margin-left: 15px;
     grid-row: 1/2;
   }
@@ -79,7 +78,6 @@
   width: 16px;
   height: 32px;
   position: absolute;
-  top: 67%;
   border: none;
   background-color: transparent;
   background-image: url("../../img/svg/arrow.svg");
@@ -102,30 +100,8 @@
     box-shadow: 0 0 2px 2px #e8e8e897;
   }
 
-  @media (max-width: $vp-1199) {
-    top: 66%;
-  }
-
   @media (max-width: $vp-767) {
-    top: 62%;
     width: 10px;
     height: 19px;
-  }
-}
-
-.carousel__prev {
-  left: -56px;
-  transform: rotate(-180deg);
-
-  @media (max-width: $vp-767) {
-    left: -32px;
-  }
-}
-
-.carousel__next {
-  right: -56px;
-
-  @media (max-width: $vp-767) {
-    right: -32px;
   }
 }
