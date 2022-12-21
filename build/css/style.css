@@ -1131,7 +1131,7 @@ button,
 
 .video__link {
   width: 100%;
-  height: 101%;
+  height: 100%;
   display: inline-block;
   vertical-align: middle;
 }
@@ -2534,6 +2534,7 @@ button,
   border-bottom: 1px solid #74819c;
   width: 100%;
   max-width: 200px;
+  cursor: pointer;
 }
 
 .field input:hover {
@@ -2560,6 +2561,7 @@ button,
   width: 410px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .field button:hover,
@@ -2642,21 +2644,6 @@ button,
   outline: none;
 }
 
-.nojs.tabs__block {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 40px;
-}
-
 .swiper-button-next,
 .swiper-button-prev {
   width: 16px;
@@ -2714,6 +2701,47 @@ button,
 .swiper-button--carousel-next {
   top: 67%;
   right: -56px;
+}
+
+.nojs.tabs__block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nojs .slider__line.swiper-wrapper,
+.nojs .carousel__track.swiper-wrapper {
+  width: auto;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 39px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.nojs .slider__item.swiper-slide {
+  width: auto;
+  height: auto;
+}
+
+.nojs .slider__img {
+  width: auto;
+}
+
+.nojs .carousel__item.swiper-slide {
+  height: auto;
 }
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -3434,13 +3462,6 @@ button,
     margin-bottom: -2px;
   }
 
-  .nojs.tabs__block--active {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
   .swiper-button {
     top: 62.7%;
   }
@@ -3448,6 +3469,13 @@ button,
   .swiper-button--carousel-prev,
   .swiper-button--carousel-next {
     top: 66%;
+  }
+
+  .nojs.tabs__block--active {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
