@@ -32,6 +32,7 @@ export const moveCoachesSlider = () => new window.Swiper('.slider', {
 export const swipeCarousel = () => new window.Swiper('.carousel', {
   direction: 'horizontal',
   loop: false,
+  autoHeight: true,
 
   navigation: {
     nextEl: '.swiper-button--carousel-next',
