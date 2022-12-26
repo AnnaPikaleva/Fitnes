@@ -69,7 +69,8 @@
     bottom: 0;
   }
 
-  &--hover:hover h3 {
+  &--hover:hover h3,
+  &--hover:focus h3 {
     display: none;
   }
 

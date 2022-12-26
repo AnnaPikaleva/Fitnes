@@ -1876,7 +1876,8 @@ button,
   bottom: 0;
 }
 
-.slider__item--hover:hover h3 {
+.slider__item--hover:hover h3,
+.slider__item--hover:focus h3 {
   display: none;
 }
 
