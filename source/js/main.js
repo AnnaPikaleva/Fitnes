@@ -129,27 +129,6 @@ for (let i = 0; i < phoneInputs.length; i++) {
   });
 }
 
-// Click on slider card
-
-const madiaQuery = window.matchMedia('(max-width: 1199px)');
-
-function handleChange(element) {
-  if (element.matches) {
-    const sliderCards = document.querySelectorAll('.slider__item');
-    sliderCards.forEach((card) => {
-      card.classList.remove('slider__item--hover');
-      card.addEventListener('click', () => {
-        const subitemCard = card.querySelector('.slider__subitem');
-        subitemCard.classList.toggle('slider__subitem--active');
-        card.classList.toggle('slider__item--active');
-      });
-    });
-  }
-}
-
-madiaQuery.addEventListener('change', handleChange);
-handleChange(madiaQuery);
-
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
