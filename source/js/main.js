@@ -22,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
     swipeCarousel();
     findVideos();
     moveToBlock();
+    handleChange(mediaQuery);
+    handleChangeDesktop(mediaQueryDesktop);
   });
 });
 
@@ -128,6 +130,39 @@ for (let i = 0; i < phoneInputs.length; i++) {
     input.value = input.value.replace(/[^\d]/g, '');
   });
 }
+
+// Click on slider card
+
+const mediaQuery = window.matchMedia('(max-width: 1199px)');
+const mediaQueryDesktop = window.matchMedia('(min-width: 1200px)');
+
+function handleChangeDesktop(element) {
+  if (element.matches) {
+    const sliderCardsd = document.querySelectorAll('.slider__item');
+    sliderCardsd.forEach((card) => {
+      card.classList.add('slider__item--hover');
+      const subitemCard = card.querySelector('.slider__subitem');
+      subitemCard.classList.remove('slider__subitem--active');
+    });
+  }
+}
+
+function handleChange(element) {
+  if (element.matches) {
+    const sliderCards = document.querySelectorAll('.slider__item');
+    sliderCards.forEach((card) => {
+      card.classList.remove('slider__item--hover');
+      card.addEventListener('click', () => {
+        const subitemCard = card.querySelector('.slider__subitem');
+        subitemCard.classList.toggle('slider__subitem--active');
+        card.classList.toggle('slider__item--active');
+      });
+    });
+  }
+}
+
+mediaQuery.addEventListener('change', handleChange);
+mediaQueryDesktop.addEventListener('change', handleChangeDesktop);
 
 // ---------------------------------
 
